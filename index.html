@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Veille Technologique — IA Générative en Entreprise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-brand">VT · 2025–2026</div>
+    <ul class="nav-links">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#resultats">Résultats</a></li>
+      <li><a href="#methodologie">Méthodologie</a></li>
+      <li><a href="#references">Références</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="accueil" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Veille Technologique · École Centrale Lyon · 2025–2026</div>
+      <h1>L'IA Générative<br><span class="accent">en Entreprise</span></h1>
+      <p class="hero-sub">Enjeux de souveraineté et de protection des données</p>
+      <div class="hero-meta">
+        <span>Bamishola LOKE</span>
+        <span class="sep">·</span>
+        <span>Tuteur : René CHALON</span>
+        <span class="sep">·</span>
+        <span>06 mars 2026</span>
+      </div>
+      <a href="#resultats" class="btn-primary">Explorer la veille ↓</a>
+    </div>
+    <div class="hero-cards">
+      <div class="hero-card">
+        <div class="card-icon">🔍</div>
+        <div class="card-label">Où vont mes données ?</div>
+        <div class="card-text">Quand j'interroge une API cloud, mes données quittent mon infrastructure</div>
+      </div>
+      <div class="hero-card">
+        <div class="card-icon">🏛️</div>
+        <div class="card-label">Qui contrôle le modèle ?</div>
+        <div class="card-text">Les LLMs propriétaires sont des boîtes noires hors de ma souveraineté</div>
+      </div>
+      <div class="hero-card">
+        <div class="card-icon">⚖️</div>
+        <div class="card-label">Suis-je conforme ?</div>
+        <div class="card-text">RGPD, AI Act européen, HDS… les contraintes réglementaires s'accumulent</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMATIQUE -->
+  <section class="problematique">
+    <div class="container">
+      <div class="section-label">Problématique centrale</div>
+      <blockquote>
+        Comment déployer l'IA générative en entreprise tout en garantissant <strong>souveraineté</strong> et <strong>protection des données</strong> ?
+      </blockquote>
+      <p class="context-text">
+        L'explosion de l'IA générative en entreprise — ChatGPT, Copilot, Gemini — apporte des gains de productivité réels, mais dissimule des risques critiques : fuites de données confidentielles (affaire Samsung/ChatGPT, 2023), dépendance aux fournisseurs américains, et tensions avec le cadre réglementaire européen.
+      </p>
+    </div>
+  </section>
+
+  <!-- AXES -->
+  <section class="axes">
+    <div class="container">
+      <div class="section-label">Axes de recherche</div>
+      <h2>Trois dimensions analysées</h2>
+      <div class="axes-grid">
+        <div class="axe-card">
+          <div class="axe-num">01</div>
+          <h3>Déploiement</h3>
+          <p>Cloud public, on-premise et hybride — comparaison des modes de déploiement selon la sensibilité des données</p>
+          <ul>
+            <li>Cloud public (OpenAI, Azure, AWS)</li>
+            <li>On-premise (Mistral, Llama en local)</li>
+            <li>Hybride : mix cloud + local</li>
+            <li>Explosion des modèles open-source</li>
+          </ul>
+        </div>
+        <div class="axe-card">
+          <div class="axe-num">02</div>
+          <h3>Souveraineté</h3>
+          <p>Enjeux géopolitiques et initiatives souveraines européennes face à la dépendance US</p>
+          <ul>
+            <li>Vendor lock-in fournisseurs US</li>
+            <li>BLOOM (Hugging Face), Lucie (FR)</li>
+            <li>Certification HDS (santé)</li>
+            <li>AI Act : obligations de transparence</li>
+          </ul>
+        </div>
+        <div class="axe-card">
+          <div class="axe-num">03</div>
+          <h3>Protection des données</h3>
+          <p>Sécurité, conformité et risques liés à l'utilisation de l'IA sur des données sensibles</p>
+          <ul>
+            <li>Risque de fuite de données confidentielles</li>
+            <li>Anonymisation des données</li>
+            <li>RGPD Article 22 : décisions automatisées</li>
+            <li>Solutions : chiffrement, réseaux privés</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTATS -->
+  <section id="resultats" class="resultats">
+    <div class="container">
+      <div class="section-label">Résultats</div>
+      <h2>Comparaison des approches de déploiement</h2>
+      <p class="section-intro">Tableau comparatif des trois modes selon 7 critères clés</p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Critère</th>
+              <th class="cloud">☁️ Cloud public</th>
+              <th class="onprem">🖥️ On-Premise</th>
+              <th class="hybrid">🔀 Hybride</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Performance</td>
+              <td class="cloud">Très haute (GPT-4)</td>
+              <td class="onprem">Bonne (Mistral, Llama)</td>
+              <td class="hybrid">Flexible</td>
+            </tr>
+            <tr>
+              <td>Coût opérationnel</td>
+              <td class="cloud">Élevé (pay-per-token)</td>
+              <td class="onprem">Fort invest. initial</td>
+              <td class="hybrid best">Optimisé ✓</td>
+            </tr>
+            <tr>
+              <td>Confidentialité</td>
+              <td class="cloud risk">⚠ Risque de fuite</td>
+              <td class="onprem best">Données locales ✓</td>
+              <td class="hybrid">Selon config</td>
+            </tr>
+            <tr>
+              <td>Souveraineté</td>
+              <td class="cloud risk">⚠ Dépendance US</td>
+              <td class="onprem best">Contrôle total ✓</td>
+              <td class="hybrid">Partielle</td>
+            </tr>
+            <tr>
+              <td>Conformité RGPD</td>
+              <td class="cloud risk">⚠ Complexe</td>
+              <td class="onprem best">Plus facile ✓</td>
+              <td class="hybrid">Cas par cas</td>
+            </tr>
+            <tr>
+              <td>Facilité déploiement</td>
+              <td class="cloud best">Immédiate ✓</td>
+              <td class="onprem risk">⚠ Complexe (GPU)</td>
+              <td class="hybrid">Intermédiaire</td>
+            </tr>
+            <tr>
+              <td>Scalabilité</td>
+              <td class="cloud best">Infinie ✓</td>
+              <td class="onprem">Limitée par l'infra</td>
+              <td class="hybrid">Bonne</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="conclusion-box">
+        <div class="conclusion-icon">💡</div>
+        <div>
+          <strong>Conclusion principale :</strong> L'approche <strong>hybride</strong> représente le meilleur compromis pour la majorité des entreprises — elle permet de traiter les données sensibles en local (on-premise) tout en bénéficiant de la scalabilité du cloud pour les tâches non critiques.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="articles">
+    <div class="container">
+      <div class="section-label">Sources scientifiques</div>
+      <h2>Articles clés identifiés</h2>
+      <div class="articles-grid">
+        <div class="article-card">
+          <div class="article-badge">arXiv · 2025</div>
+          <h3>Privacy in the Age of AI: A Taxonomy of Data Risks</h3>
+          <div class="article-authors">Billiris, G., Gill, A., &amp; Bandara, M.</div>
+          <ul class="article-findings">
+            <li><strong>19 risques identifiés</strong> — classifiés à partir de 45 études</li>
+            <li><strong>4 grandes catégories</strong> — données, modèle, infrastructure, humains</li>
+            <li><strong>L'erreur humaine = risque n°1</strong> — les employés partagent des données sensibles sans le savoir (cas Samsung)</li>
+            <li>Les anciens outils de sécurité ne sont pas conçus pour l'IA</li>
+          </ul>
+        </div>
+        <div class="article-card">
+          <div class="article-badge">arXiv · 2025</div>
+          <h3>Security &amp; Privacy Challenges in Generative AI — Higher Education</h3>
+          <div class="article-authors">Ng, B. Y., Li, J., Tong, X., et al.</div>
+          <ul class="article-findings">
+            <li><strong>12 pays analysés</strong> — politiques officielles d'universités</li>
+            <li><strong>Peu de contrôle utilisateur</strong> sur l'usage des données par les fournisseurs</li>
+            <li>Absence de standard universel — chaque institution crée ses propres règles</li>
+            <li>Besoin de protections sur mesure selon le contexte</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BILAN -->
+  <section class="bilan">
+    <div class="container">
+      <div class="section-label">Bilan &amp; Perspectives</div>
+      <div class="bilan-grid">
+        <div>
+          <h2>Ce que la veille a montré</h2>
+          <div class="bilan-items">
+            <div class="bilan-item">
+              <div class="bilan-dot green"></div>
+              <div>L'IA générative est incontournable mais les risques de souveraineté sont réels</div>
+            </div>
+            <div class="bilan-item">
+              <div class="bilan-dot orange"></div>
+              <div>Le cloud est performant mais crée une dépendance US et des risques RGPD</div>
+            </div>
+            <div class="bilan-item">
+              <div class="bilan-dot blue"></div>
+              <div>L'on-premise offre un contrôle total mais nécessite un fort investissement</div>
+            </div>
+            <div class="bilan-item">
+              <div class="bilan-dot purple"></div>
+              <div>L'hybride est le meilleur compromis pour la majorité des entreprises</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Perspectives</h2>
+          <div class="bilan-items">
+            <div class="bilan-item">
+              <div class="bilan-dot arrow">→</div>
+              <div>Analyser l'AI Act européen en détail et son impact opérationnel</div>
+            </div>
+            <div class="bilan-item">
+              <div class="bilan-dot arrow">→</div>
+              <div>Benchmarker Mistral vs GPT-4 sur des cas métier réels</div>
+            </div>
+            <div class="bilan-item">
+              <div class="bilan-dot arrow">→</div>
+              <div>Interviewer des DSI sur leurs choix de déploiement réels</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHODOLOGIE -->
+  <section id="methodologie" class="methodologie">
+    <div class="container">
+      <div class="section-label">Rapport Méthodologique</div>
+      <h2>Comment cette veille a été conduite</h2>
+
+      <div class="methodo-intro">
+        <p>Cette section constitue l'annexe technique de la veille. Elle détaille la démarche, les outils et les sources utilisés pour collecter, filtrer et analyser l'information sur le sujet de l'IA générative en entreprise.</p>
+      </div>
+
+      <div class="methodo-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>Ciblage</h3>
+            <p>Définition des objectifs et des axes de veille. Identification des mots-clés stratégiques :</p>
+            <div class="keywords">
+              <span>GenAI entreprise</span>
+              <span>IA souveraineté</span>
+              <span>LLM on-premise</span>
+              <span>cloud vs local LLM</span>
+              <span>RGPD IA</span>
+              <span>open source LLM</span>
+              <span>données confidentielles IA</span>
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Collecte</h3>
+            <p>Identification et activation des sources d'information via quatre catégories d'outils :</p>
+            <div class="tools-grid">
+              <div class="tool-group">
+                <div class="tool-group-title">📚 Sources académiques</div>
+                <span>Google Scholar</span>, <span>arXiv</span>, <span>ResearchGate</span>
+              </div>
+              <div class="tool-group">
+                <div class="tool-group-title">🌐 Réseaux sociaux</div>
+                <span>LinkedIn</span>, <span>Reddit</span>, <span>X (Twitter)</span>, <span>YouTube</span>
+              </div>
+              <div class="tool-group">
+                <div class="tool-group-title">🤖 IA &amp; communautés</div>
+                <span>Perplexity</span>, <span>ChatGPT</span>, <span>Hugging Face</span>
+              </div>
+              <div class="tool-group">
+                <div class="tool-group-title">🔔 Alertes automatiques</div>
+                <span>Google Alerts</span>, <span>Feedly</span>, <span>Zotero</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Analyse</h3>
+            <p>Filtrage des sources selon leur pertinence, recoupement des informations entre sources multiples, et validation critique. Priorité accordée aux publications scientifiques (arXiv) et aux sources institutionnelles (CNIL, EUR-Lex).</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h3>Exploitation</h3>
+            <p>Structuration des résultats sous forme de synthèse comparative (tableau Cloud/On-Premise/Hybride), rédaction du présent site de veille, et préparation de la présentation orale du 06/03/2026.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section id="references" class="references">
+    <div class="container">
+      <div class="section-label">Bibliographie</div>
+      <h2>Références bibliographiques</h2>
+      <p class="section-intro">Format APA · 7 sources</p>
+      <ol class="ref-list">
+        <li>Billiris, G., Gill, A., &amp; Bandara, M. (2025). <em>Privacy in the Age of AI: A Taxonomy of Data Risks</em>. arXiv. <a href="https://arxiv.org" target="_blank">arxiv.org</a></li>
+        <li>Ng, B. Y., Li, J., Tong, X., Ye, K., Yenne, G., Chandrasekaran, V., &amp; Li, J. (2025). <em>Analyzing Security and Privacy Challenges in Generative AI Usage Guidelines for Higher Education</em>. arXiv. <a href="https://arxiv.org" target="_blank">arxiv.org</a></li>
+        <li>CNIL. (2024). <em>L'IA générative et le RGPD : questions-réponses</em>. <a href="https://www.cnil.fr" target="_blank">cnil.fr</a></li>
+        <li>Parlement européen et Conseil de l'UE. (2024). <em>Règlement (UE) 2024/1689 — AI Act</em>. EUR-Lex. <a href="https://eur-lex.europa.eu" target="_blank">eur-lex.europa.eu</a></li>
+        <li>Jiang, A., et al. (2023). <em>Mistral 7B</em>. arXiv. <a href="https://arxiv.org" target="_blank">arxiv.org</a></li>
+        <li>RFI. (2023, 9 avril). <em>Des données sensibles de Samsung divulgués via ChatGPT</em>. <a href="https://www.rfi.fr" target="_blank">rfi.fr</a></li>
+        <li>Actil Academy. (2024). <em>IA générative et RGPD au travail</em> [Vidéo]. YouTube. <a href="https://www.youtube.com/watch?v=woIM7hWLwyk" target="_blank">youtube.com</a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>Bamishola LOKE · École Centrale Lyon · MOS 4.4 Veille Technologique · 2025–2026</p>
+      <p>Tuteur : René CHALON</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
