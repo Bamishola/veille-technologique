@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IA Générative en Entreprise — Veille MOS 4.4 · ECL 2026</title>
+  <title>IA Générative en Entreprise : Veille MOS 4.4 · ECL 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
   <style>
@@ -14,13 +14,15 @@
       --fond:#fafaf8;--fs:#f4f4f0;--blanc:#fff;--ligne:#e0ddd8;--or:#c9a84c;
     }
     html{scroll-behavior:smooth}
-    body{font-family:'Source Serif 4',Georgia,serif;background:var(--fond);color:var(--noir);font-size:17px;line-height:1.75;overflow-x:hidden}
+    body{font-family:'Source Serif 4',Georgia,serif;background:var(--fond);color:var(--noir);font-size:18.5px;line-height:1.82;overflow-x:hidden;zoom:1.4}
+    @supports not (zoom:1.4){body{font-size:25.9px}}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--bx);outline-offset:2px}
     /* NAV */
     nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--ligne);padding:0 2rem}
     .nav-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:58px}
     .nav-brand{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;color:var(--bx);text-decoration:none}
     .nav-links{display:flex;list-style:none}
-    .nav-links a{display:block;padding:0 .9rem;font-size:.72rem;color:var(--gm);text-decoration:none;letter-spacing:.07em;text-transform:uppercase;line-height:58px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+    .nav-links a{display:block;padding:0 .9rem;font-size:.78rem;color:var(--gm);text-decoration:none;letter-spacing:.07em;text-transform:uppercase;line-height:58px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
     .nav-links a:hover{color:var(--bx);border-bottom-color:var(--bx)}
     @media(max-width:760px){.nav-links{display:none}}
     /* HERO */
@@ -29,81 +31,89 @@
     #accueil::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--bx),transparent)}
     .hero-inner{max-width:1160px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
     @media(max-width:860px){.hero-inner{grid-template-columns:1fr;gap:3rem}}
-    .hero-tag{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bxl);font-weight:600;margin-bottom:1.8rem;display:flex;align-items:center;gap:.8rem}
+    .hero-tag{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bxl);font-weight:600;margin-bottom:1.8rem;display:flex;align-items:center;gap:.8rem}
     .hero-tag::before{content:'';display:block;width:2rem;height:1px;background:var(--bxl)}
     .hero-titre{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.8rem);font-weight:700;line-height:1.12;color:#fff;margin-bottom:2rem;letter-spacing:-.02em}
     .hero-titre em{font-style:italic;color:var(--or)}
-    .hero-prob{font-size:1rem;font-style:italic;color:rgba(255,255,255,.5);border-left:2px solid var(--bx);padding-left:1.2rem;line-height:1.7;margin-bottom:2.5rem}
-    .hero-meta{font-size:.76rem;color:rgba(255,255,255,.3);line-height:1.8}
+    .hero-prob{font-size:1.07rem;font-style:italic;color:rgba(255,255,255,.5);border-left:2px solid var(--bx);padding-left:1.2rem;line-height:1.72;margin-bottom:2.5rem}
+    .hero-meta{font-size:.84rem;color:rgba(255,255,255,.3);line-height:1.8}
     .hero-meta strong{color:rgba(255,255,255,.5)}
+    .hero-methodo{margin-top:1.3rem;border-top:1px solid rgba(255,255,255,.12);padding-top:1rem;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem}
+    .hero-methodo-item{font-size:.74rem;color:rgba(255,255,255,.36);line-height:1.5}
+    .hero-methodo-item strong{display:block;font-family:'Playfair Display',serif;font-size:.92rem;color:rgba(255,255,255,.65);font-weight:600;line-height:1.2}
+    @media(max-width:540px){.hero-methodo{grid-template-columns:1fr}}
     .hero-right{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08)}
     .hero-stat{background:rgba(255,255,255,.03);padding:2rem 1.5rem;text-align:center;transition:background .3s}
     .hero-stat:hover{background:rgba(122,30,46,.15)}
     .hero-stat-val{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--or);line-height:1;margin-bottom:.5rem}
-    .hero-stat-lbl{font-size:.74rem;color:rgba(255,255,255,.42);line-height:1.5}
-    .hero-stat-src{font-size:.62rem;color:rgba(255,255,255,.2);margin-top:.4rem}
+    .hero-stat-lbl{font-size:.82rem;color:rgba(255,255,255,.42);line-height:1.5}
+    .hero-stat-src{font-size:.7rem;color:rgba(255,255,255,.2);margin-top:.4rem}
     /* CARROUSEL DELOITTE */
-    #dc{background:#0d0d0d;padding:0;overflow:hidden;position:relative}
-    .dc-header{padding:4rem 2rem 2.5rem;max-width:1160px;margin:0 auto;display:flex;align-items:flex-end;justify-content:space-between;gap:2rem}
-    .dc-eyebrow{font-size:.67rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bxl);margin-bottom:.5rem}
-    .dc-titre{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700;color:#fff;line-height:1.2}
-    .dc-titre em{font-style:italic;color:var(--or)}
-    .dc-src{font-size:.7rem;color:rgba(255,255,255,.22);margin-top:.4rem}
-    .dc-nav{display:flex;gap:.6rem;flex-shrink:0}
-    .dc-btn{width:44px;height:44px;border:1px solid rgba(255,255,255,.15);background:transparent;color:#fff;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
-    .dc-btn:hover{background:var(--bx);border-color:var(--bx)}
-    .dc-track-wrap{overflow:hidden;padding:0 2rem 3.5rem}
-    .dc-track{display:flex;gap:1.5rem;transition:transform .55s cubic-bezier(.4,0,.2,1)}
-    .dc-slide{flex:0 0 calc((100% - 3rem)/3);min-width:280px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);padding:2.4rem 2rem;position:relative;transition:border-color .3s,background .3s}
-    .dc-slide:hover{background:rgba(122,30,46,.09);border-color:rgba(122,30,46,.45)}
-    .dc-snum{font-family:'Playfair Display',serif;font-size:4rem;font-weight:700;color:rgba(255,255,255,.04);line-height:1;position:absolute;top:1.5rem;right:1.5rem;letter-spacing:-.05em}
-    .dc-stat{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--or);line-height:1;margin-bottom:1rem}
-    .dc-stitle{font-family:'Playfair Display',serif;font-size:1.02rem;font-weight:600;color:#fff;margin-bottom:.7rem;line-height:1.3}
-    .dc-sbody{font-size:.82rem;color:rgba(255,255,255,.42);line-height:1.65}
-    .dc-dots{display:flex;gap:6px;justify-content:center;padding-bottom:3rem}
-    .dc-dot{width:6px;height:6px;background:rgba(255,255,255,.15);border-radius:50%;cursor:pointer;transition:all .3s}
-    .dc-dot.active{background:var(--bx);width:22px;border-radius:3px}
-    @media(max-width:900px){.dc-slide{flex:0 0 calc((100% - 1.5rem)/2)}}
-    @media(max-width:560px){.dc-slide{flex:0 0 86%}}
+    #dc{background:#f7f7f7;padding:5rem 2rem 4rem;overflow:hidden;position:relative}
+    .dc-inner{max-width:1334px;margin:0 auto;position:relative}
+    .dc-header{margin:0 auto 2rem;text-align:center;max-width:980px}
+    .dc-eyebrow{font-size:.74rem;letter-spacing:.15em;text-transform:uppercase;color:#4e6f57;margin-bottom:.6rem}
+    .dc-titre{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.2vw,2.7rem);font-weight:700;color:#0f1112;line-height:1.2}
+    .dc-src{font-size:.82rem;color:#5e6468;margin-top:.6rem}
+    .dc-nav{position:absolute;left:0;right:0;top:56%;display:flex;justify-content:space-between;pointer-events:none;z-index:8}
+    .dc-btn{pointer-events:auto;width:72px;height:72px;border:2px solid #8ecf77;background:#fff;color:#26890d;font-size:2rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:0 10px 20px rgba(0,0,0,.08)}
+    .dc-btn:hover{background:#eef9ea;border-color:#6db85a}
+    #dc-prev{transform:translateX(-34px)}
+    #dc-next{transform:translateX(34px)}
+    .dc-track-wrap{overflow:hidden;max-width:1334px;margin:0 auto}
+    .dc-track{display:flex;gap:0;transition:transform .55s cubic-bezier(.4,0,.2,1)}
+    .dc-slide{flex:0 0 100%;min-width:100%;padding:0;background:transparent;border:none}
+    .dc-frame{width:100%;aspect-ratio:16/9;background:#ececec;overflow:hidden;position:relative}
+    .dc-img{width:100%;height:100%;object-fit:contain;display:block}
+    .dc-fallback{position:absolute;inset:0;background:#dfe5df;display:flex;align-items:center;justify-content:center;font-size:.9rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#50615a;opacity:0;transition:opacity .2s}
+    .dc-frame.is-missing .dc-fallback{opacity:1}
+    .dc-dots{display:flex;gap:8px;justify-content:center;padding-top:1.5rem}
+    .dc-dot{width:8px;height:8px;background:#c8cccf;border-radius:50%;cursor:pointer;transition:all .3s}
+    .dc-dot.active{background:#2c86e8;width:22px;border-radius:3px}
+    @media(max-width:1240px){#dc-prev{transform:translateX(0)}#dc-next{transform:translateX(0)}}
+    @media(max-width:760px){.dc-nav{top:52%}.dc-btn{width:56px;height:56px;font-size:1.5rem}}
     /* CARROUSEL PRÉSENTATION */
     #pc{background:var(--fs);padding:5rem 2rem;overflow:hidden}
-    .pc-inner{max-width:1160px;margin:0 auto}
+    .pc-inner{max-width:1160px;margin:0 auto;position:relative}
     .pc-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3rem;gap:2rem}
     .pc-eyebrow{font-size:.67rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bx);margin-bottom:.5rem}
     .pc-titre{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:var(--noir);line-height:1.2}
     .pc-sous{font-size:.86rem;color:var(--gm);margin-top:.4rem;font-style:italic}
-    .pc-nav{display:flex;gap:.6rem;flex-shrink:0}
-    .pc-btn{width:44px;height:44px;border:1px solid var(--ligne);background:var(--blanc);color:var(--noir);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
-    .pc-btn:hover{background:var(--bx);border-color:var(--bx);color:#fff}
-    .pc-track-wrap{overflow:hidden}
-    .pc-track{display:flex;gap:1.5rem;transition:transform .55s cubic-bezier(.4,0,.2,1)}
-    .pc-slide{flex:0 0 calc((100% - 3rem)/3);min-width:240px;background:var(--blanc);border:1px solid var(--ligne);overflow:hidden;cursor:pointer;transition:box-shadow .3s,transform .3s}
+    .pc-nav{position:absolute;left:0;right:0;top:56%;display:flex;justify-content:space-between;pointer-events:none;z-index:8}
+    .pc-btn{pointer-events:auto;width:72px;height:72px;border:2px solid var(--bx);background:var(--bx);color:#fff;font-size:1.55rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:0 10px 22px rgba(0,0,0,.18)}
+    .pc-btn:hover{background:var(--bxl);border-color:var(--bxl);transform:scale(1.03)}
+    #pc-prev{transform:translateX(-34px)}
+    #pc-next{transform:translateX(34px)}
+    .pc-track-wrap{overflow:hidden;max-width:980px;margin:0 auto}
+    .pc-track{display:flex;gap:0;transition:transform .55s cubic-bezier(.4,0,.2,1)}
+    .pc-slide{flex:0 0 100%;min-width:100%;background:var(--blanc);border:1px solid var(--ligne);overflow:hidden;cursor:pointer;transition:box-shadow .3s,transform .3s}
     .pc-slide:hover{box-shadow:0 10px 36px rgba(0,0,0,.12);transform:translateY(-3px)}
-    .pc-mock{width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,#1c0609 0%,#7a1e2e 55%,#3a0a14 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.4rem;position:relative;overflow:hidden}
-    .pc-mock::before{content:'';position:absolute;bottom:-15px;right:-15px;width:70px;height:70px;background:rgba(201,168,76,.12);border-radius:50%}
-    .pc-ecl{position:absolute;top:9px;left:11px;display:flex;align-items:center;gap:4px}
-    .pc-ecl-dot{width:5px;height:5px;background:var(--or);border-radius:50%}
-    .pc-ecl-txt{font-size:.48rem;color:rgba(255,255,255,.35);letter-spacing:.1em;text-transform:uppercase}
-    .pc-mnum{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.4rem}
-    .pc-mtitle{font-family:'Playfair Display',serif;font-size:.88rem;font-weight:600;color:#fff;text-align:center;line-height:1.3}
-    .pc-maccent{font-family:'Playfair Display',serif;font-size:.72rem;font-style:italic;color:var(--or);margin-top:.35rem;text-align:center}
+    .pc-frame{width:100%;aspect-ratio:16/9;background:#1a1a1a;overflow:hidden;position:relative}
+    .pc-img{width:100%;height:100%;object-fit:cover;display:block}
+    .pc-fallback{position:absolute;inset:0;background:linear-gradient(135deg,#1c0609 0%,#7a1e2e 55%,#3a0a14 100%);display:flex;align-items:center;justify-content:center;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.62);opacity:0;transition:opacity .2s}
+    .pc-frame.is-missing .pc-fallback{opacity:1}
     .pc-cap{padding:.9rem 1.1rem;border-top:1px solid var(--ligne)}
-    .pc-capnum{font-size:.63rem;color:var(--bx);font-weight:600;letter-spacing:.1em;margin-bottom:.15rem}
-    .pc-captitle{font-size:.8rem;font-weight:600;color:var(--noir);line-height:1.3}
+    .pc-capnum{font-size:.72rem;color:var(--bx);font-weight:600;letter-spacing:.1em;margin-bottom:.15rem}
+    .pc-captitle{font-size:.92rem;font-weight:600;color:var(--noir);line-height:1.35}
     .pc-dots{display:flex;gap:6px;justify-content:center;margin-top:2rem}
     .pc-dot{width:6px;height:6px;background:var(--ligne);border-radius:50%;cursor:pointer;transition:all .3s}
     .pc-dot.active{background:var(--bx);width:22px;border-radius:3px}
-    @media(max-width:900px){.pc-slide{flex:0 0 calc((100% - 1.5rem)/2)}}
-    @media(max-width:560px){.pc-slide{flex:0 0 82%}}
+    @media(max-width:1240px){
+      #pc-prev{transform:translateX(0)}
+      #pc-next{transform:translateX(0)}
+    }
+    @media(max-width:760px){
+      .pc-nav{top:52%}
+      .pc-btn{width:56px;height:56px;font-size:1.25rem}
+    }
     /* MODAL */
     .modal-ov{position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:1000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s;padding:2rem}
     .modal-ov.open{opacity:1;pointer-events:all}
     .modal-c{max-width:860px;width:100%;position:relative}
     .modal-disp{width:100%;aspect-ratio:16/9;overflow:hidden}
-    .modal-mock{width:100%;height:100%;background:linear-gradient(135deg,#120306 0%,#6a1828 50%,#2e0810 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3rem;position:relative}
-    .modal-mnum{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
-    .modal-mtitle{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3vw,2.3rem);font-weight:700;color:#fff;text-align:center;line-height:1.25;max-width:560px}
-    .modal-maccent{font-family:'Playfair Display',serif;font-style:italic;color:var(--or);font-size:clamp(.9rem,2vw,1.3rem);margin-top:.7rem;text-align:center}
+    .modal-img{width:100%;height:100%;object-fit:contain;display:block;background:#070707}
+    .modal-meta{margin-top:1rem;text-align:center;color:rgba(255,255,255,.55);font-size:.78rem;line-height:1.6}
+    .modal-meta strong{font-family:'Playfair Display',serif;color:#fff;font-size:1rem;font-weight:600}
     .modal-close{position:absolute;top:-3.2rem;right:0;background:transparent;border:1px solid rgba(255,255,255,.2);color:#fff;width:36px;height:36px;cursor:pointer;font-size:.95rem;display:flex;align-items:center;justify-content:center;transition:background .2s}
     .modal-close:hover{background:var(--bx);border-color:var(--bx)}
     .modal-nav{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:1.5rem}
@@ -115,17 +125,17 @@
     .sec:nth-of-type(odd){background:var(--blanc)}
     .sec:nth-of-type(even){background:var(--fs)}
     .si{max-width:880px;margin:0 auto}
-    .stag{font-size:.67rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bx);font-weight:600;margin-bottom:.5rem;display:flex;align-items:center;gap:.6rem}
+    .stag{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bx);font-weight:600;margin-bottom:.5rem;display:flex;align-items:center;gap:.6rem}
     .stag::before{content:'';display:block;width:1.5rem;height:1px;background:var(--bx)}
     .stitre{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:var(--noir);margin-bottom:.5rem;line-height:1.2}
-    .ssous{font-size:.93rem;color:var(--gm);font-style:italic;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--ligne)}
+    .ssous{font-size:1.01rem;color:var(--gm);font-style:italic;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--ligne)}
     p{margin-bottom:1.2rem;color:var(--gf)}
     p:last-child{margin-bottom:0}
     .enc{border-left:3px solid var(--bx);padding:1.2rem 1.5rem;background:var(--bxp);margin:2rem 0}
     .enc-t{font-family:'Playfair Display',serif;font-size:.93rem;font-weight:600;color:var(--bx);margin-bottom:.4rem}
     .enc p{font-size:.87rem;margin-bottom:0}
     .tw{overflow-x:auto;margin:2rem 0;border:1px solid var(--ligne)}
-    table{width:100%;border-collapse:collapse;font-size:.85rem}
+    table{width:100%;border-collapse:collapse;font-size:.92rem}
     thead tr{background:var(--bx);color:#fff}
     thead th{padding:.9rem 1rem;text-align:left;font-weight:600;letter-spacing:.03em}
     tbody tr{border-bottom:1px solid var(--ligne)}
@@ -138,11 +148,11 @@
     .card{border:1px solid var(--ligne);padding:1.5rem;background:var(--blanc);transition:border-color .2s}
     .card:hover{border-color:var(--bx)}
     .card-t{font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:var(--noir);margin-bottom:.4rem}
-    .card-b{font-size:.82rem;color:var(--gm);line-height:1.6;margin:0}
+    .card-b{font-size:.9rem;color:var(--gm);line-height:1.6;margin:0}
     .chrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--ligne);border:1px solid var(--ligne);margin:2rem 0}
     .chitem{background:var(--blanc);padding:1.5rem 1.2rem;text-align:center}
     .chval{font-family:'Playfair Display',serif;font-size:2.3rem;font-weight:700;color:var(--bx);line-height:1;margin-bottom:.4rem}
-    .chlbl{font-size:.74rem;color:var(--gm);line-height:1.4}
+    .chlbl{font-size:.82rem;color:var(--gm);line-height:1.45}
     .chsrc{font-size:.62rem;color:var(--gc);margin-top:.3rem}
     .sbox{border:1px solid #d4a5ac;background:#fff8f8;padding:2rem;margin:2rem 0}
     .sbox h3{font-family:'Playfair Display',serif;font-size:1rem;color:var(--bx);margin-bottom:1rem}
@@ -153,9 +163,9 @@
     .txg{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:1rem;margin:2rem 0}
     .txc{border:1px solid var(--ligne);padding:1.3rem;background:var(--blanc)}
     .txp{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:700;color:var(--bx);line-height:1}
-    .txcat{font-size:.82rem;font-weight:600;color:var(--noir);margin:.3rem 0 .4rem}
-    .txd{font-size:.75rem;color:var(--gm);line-height:1.5}
-    .txtop{margin-top:.8rem;font-size:.71rem;color:var(--gc);border-top:1px solid var(--ligne);padding-top:.5rem}
+    .txcat{font-size:.9rem;font-weight:600;color:var(--noir);margin:.3rem 0 .4rem}
+    .txd{font-size:.84rem;color:var(--gm);line-height:1.55}
+    .txtop{margin-top:.8rem;font-size:.8rem;color:var(--gc);border-top:1px solid var(--ligne);padding-top:.5rem}
     .txtop strong{color:var(--bx)}
     .aag{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--ligne);border:1px solid var(--ligne);margin:2rem 0}
     .aalv{background:var(--blanc);padding:1.2rem 1rem}
@@ -172,7 +182,7 @@
     .convl{font-weight:600;color:var(--noir);font-size:.82rem;margin-bottom:.2rem}
     .convs{font-size:.7rem;color:var(--gc);font-style:italic;margin-top:.25rem}
     .srcl{list-style:none;counter-reset:src;margin:1.5rem 0}
-    .srcl li{counter-increment:src;padding:1rem 1rem 1rem 3rem;position:relative;border-bottom:1px solid var(--ligne);font-size:.85rem;line-height:1.6}
+    .srcl li{counter-increment:src;padding:1rem 1rem 1rem 3rem;position:relative;border-bottom:1px solid var(--ligne);font-size:.92rem;line-height:1.65}
     .srcl li:last-child{border-bottom:none}
     .srcl li::before{content:"["counter(src)"]";position:absolute;left:0;top:1rem;font-size:.7rem;color:var(--bx);font-weight:600;width:2.5rem;text-align:right}
     .srca{font-weight:600;color:var(--noir)}.srct{font-style:italic}
@@ -182,9 +192,9 @@
     .lvg{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1.5rem;margin:2rem 0}
     .lv{border:1px solid var(--ligne);padding:1.7rem;text-decoration:none;color:inherit;display:block;transition:border-color .2s,background .2s}
     .lv:hover{border-color:var(--bx);background:var(--bxp)}
-    .lvicon{font-size:1.8rem;margin-bottom:.7rem}
+    .lvicon{display:inline-block;font-size:.62rem;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--bx);border:1px solid var(--ligne);padding:.2rem .4rem;margin-bottom:.7rem;background:var(--blanc)}
     .lvt{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:600;color:var(--noir);margin-bottom:.3rem}
-    .lvd{font-size:.78rem;color:var(--gm)}
+    .lvd{font-size:.86rem;color:var(--gm)}
     .h3i{font-family:'Playfair Display',serif;font-size:1.03rem;font-weight:600;color:var(--noir);margin:2rem 0 .7rem}
     footer{background:var(--noir);color:#4a4a4a;text-align:center;padding:3rem 2rem;font-size:.76rem;line-height:1.9;border-top:1px solid rgba(122,30,46,.25)}
     footer strong{color:#777}
@@ -194,7 +204,7 @@
 
 <nav>
   <div class="nav-inner">
-    <a class="nav-brand" href="#accueil">IA Générative · ECL 2026</a>
+    <a class="nav-brand" href="#accueil">IA Générative · en entreprise</a>
     <ul class="nav-links">
       <li><a href="#dc">Données Deloitte</a></li>
       <li><a href="#pc">Présentation</a></li>
@@ -211,45 +221,42 @@
 <section id="accueil">
   <div class="hero-inner">
     <div>
-      <p class="hero-tag">MOS 4.4 · École Centrale Lyon · 2025–2026</p>
+      <p class="hero-tag">MOS 4.4 · École Centrale Lyon · 2025-2026</p>
       <h1 class="hero-titre">L'IA générative<br>en entreprise :<br><em>souveraineté &amp;<br>protection des données</em></h1>
       <blockquote class="hero-prob">Comment déployer l'IA générative en entreprise tout en garantissant la souveraineté numérique et la protection des données&nbsp;?</blockquote>
-      <p class="hero-meta"><strong>Auteur :</strong> Bamishola LOKE &nbsp;·&nbsp; <strong>Tuteur :</strong> René CHALON<br>Veille conduite de janvier à mars 2026 · 12 sources · 3 axes de recherche</p>
+      <p class="hero-meta"><strong>Auteur :</strong> Bamishola LOKE &nbsp;·&nbsp; <strong>Tuteur :</strong> René CHALON<br>Veille conduite de janvier à mars 2026 · 12 sources validées · 3 axes de recherche</p>
+      <div class="hero-methodo">
+        <div class="hero-methodo-item"><strong>3 235</strong> décideurs interrogés par Deloitte dans 24 pays</div>
+        <div class="hero-methodo-item"><strong>1 928</strong> organisations analysées par Accenture dans 28 pays</div>
+        <div class="hero-methodo-item"><strong>45 études</strong> synthétisées dans la taxonomie Billiris (ACIS 2025)</div>
+      </div>
     </div>
     <div class="hero-right">
       <div class="hero-stat"><div class="hero-stat-val">62%</div><div class="hero-stat-lbl">des organisations EU cherchent une IA souveraine</div><div class="hero-stat-src">Accenture, 2025</div></div>
       <div class="hero-stat"><div class="hero-stat-val">&gt;70%</div><div class="hero-stat-lbl">du cloud EU détenu par des acteurs américains</div><div class="hero-stat-src">European Economics, 2025</div></div>
       <div class="hero-stat"><div class="hero-stat-val">25%</div><div class="hero-stat-lbl">des entreprises ont &gt;40% de projets IA en production</div><div class="hero-stat-src">Deloitte, 2025</div></div>
-      <div class="hero-stat"><div class="hero-stat-val">9,45%</div><div class="hero-stat-lbl">— l'erreur humaine est le 1er vecteur de risque IA</div><div class="hero-stat-src">Billiris et al., 2025</div></div>
+      <div class="hero-stat"><div class="hero-stat-val">9,45%</div><div class="hero-stat-lbl">L'erreur humaine est le 1er vecteur de risque IA</div><div class="hero-stat-src">Billiris et al., 2025</div></div>
     </div>
   </div>
 </section>
 
 <!-- CARROUSEL DELOITTE -->
 <section id="dc">
-  <div class="dc-header">
-    <div>
-      <p class="dc-eyebrow">Données clés · Deloitte AI Institute 2025</p>
-      <h2 class="dc-titre">7 résultats sur l'état de l'IA <em>en entreprise</em></h2>
-      <p class="dc-src">Enquête auprès de 3 235 décideurs · 24 pays · août–septembre 2025</p>
+  <div class="dc-inner">
+    <div class="dc-header">
+      <p class="dc-eyebrow">Deloitte AI Institute · State of AI in the Enterprise 2026</p>
+      <h2 class="dc-titre">Key findings from this year&apos;s AI report</h2>
+      <p class="dc-src">7 résultats · carrousel visuel fidèle à la source Deloitte</p>
     </div>
     <div class="dc-nav">
-      <button class="dc-btn" id="dc-prev">&#8592;</button>
-      <button class="dc-btn" id="dc-next">&#8594;</button>
+      <button class="dc-btn" id="dc-prev" type="button" aria-label="Précédent - Données Deloitte">&#8249;</button>
+      <button class="dc-btn" id="dc-next" type="button" aria-label="Suivant - Données Deloitte">&#8250;</button>
     </div>
-  </div>
-  <div class="dc-track-wrap">
-    <div class="dc-track" id="dc-track">
-      <div class="dc-slide"><span class="dc-snum">01</span><div class="dc-stat">25%→54%</div><div class="dc-stitle">Du pilote à la production</div><p class="dc-sbody">Seulement 25&nbsp;% des organisations ont plus de 40&nbsp;% de leurs projets IA en production. Ce chiffre devrait doubler dans six mois. L'accès des travailleurs à l'IA a augmenté de 50&nbsp;% en 2025.</p></div>
-      <div class="dc-slide"><span class="dc-snum">02</span><div class="dc-stat">34%</div><div class="dc-stitle">Transformation profonde vs usage superficiel</div><p class="dc-sbody">34&nbsp;% des entreprises transforment vraiment leurs processus. 30&nbsp;% redesignent des processus clés. 37&nbsp;% n'utilisent l'IA qu'en surface, sans modifier l'existant.</p></div>
-      <div class="dc-slide"><span class="dc-snum">03</span><div class="dc-stat">84%</div><div class="dc-stitle">Les emplois non redessinés autour de l'IA</div><p class="dc-sbody">84&nbsp;% des entreprises n'ont pas repensé leurs emplois autour des capacités de l'IA. La formation prime sur la refonte des rôles comme premier levier d'ajustement.</p></div>
-      <div class="dc-slide"><span class="dc-snum">04</span><div class="dc-stat">Souveraineté</div><div class="dc-stitle">« Où » est aussi crucial que « quoi »</div><p class="dc-sbody">L'IA souveraine signifie qu'un pays et ses entreprises déploient l'IA sous leurs propres lois, infrastructures et données. Ce n'est pas qu'une question de propriété : c'est une indépendance stratégique.</p></div>
-      <div class="dc-slide"><span class="dc-snum">05</span><div class="dc-stat">23%→74%</div><div class="dc-stitle">L'IA agentique dépasse ses garde-fous</div><p class="dc-sbody">L'usage de l'IA agentique passera de 23&nbsp;% à 74&nbsp;% en deux ans. Seulement 1 entreprise sur 5 dispose d'un modèle de gouvernance mature pour les agents autonomes.</p></div>
-      <div class="dc-slide"><span class="dc-snum">06</span><div class="dc-stat">58%→80%</div><div class="dc-stitle">L'IA physique progresse vite</div><p class="dc-sbody">58&nbsp;% des entreprises utilisent déjà l'IA physique (robots, drones, cobots). Ce chiffre atteindra 80&nbsp;% dans deux ans. L'Asie-Pacifique mène les premières implémentations.</p></div>
-      <div class="dc-slide"><span class="dc-snum">07</span><div class="dc-stat">42%</div><div class="dc-stitle">Stratégiquement prêts, opérationnellement incertains</div><p class="dc-sbody">42&nbsp;% des entreprises se jugent hautement préparées stratégiquement. Mais elles se sentent moins prêtes en termes d'infrastructure, de données, de gestion des risques et de talent.</p></div>
+    <div class="dc-track-wrap">
+      <div class="dc-track" id="dc-track"></div>
     </div>
+    <div class="dc-dots" id="dc-dots"></div>
   </div>
-  <div class="dc-dots" id="dc-dots"></div>
 </section>
 
 <!-- CARROUSEL PRÉSENTATION -->
@@ -259,31 +266,15 @@
       <div>
         <p class="pc-eyebrow">Soutenance MOS 4.4 · 06 mars 2026 · École Centrale Lyon</p>
         <h2 class="pc-titre">Présentation orale</h2>
-        <p class="pc-sous">15 slides — cliquer pour agrandir — naviguer avec les flèches</p>
+        <p class="pc-sous">16 slides, cliquer pour agrandir; naviguer avec les flèches</p>
       </div>
       <div class="pc-nav">
-        <button class="pc-btn" id="pc-prev">&#8592;</button>
-        <button class="pc-btn" id="pc-next">&#8594;</button>
+        <button class="pc-btn" id="pc-prev" type="button" aria-label="Précédent - Présentation">&#8592;</button>
+        <button class="pc-btn" id="pc-next" type="button" aria-label="Suivant - Présentation">&#8594;</button>
       </div>
     </div>
     <div class="pc-track-wrap">
-      <div class="pc-track" id="pc-track">
-        <div class="pc-slide" data-i="0"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 01</div><div class="pc-mtitle">L'IA générative en entreprise</div><div class="pc-maccent">Enjeux de souveraineté et de protection des données</div></div><div class="pc-cap"><div class="pc-capnum">01 / 15</div><div class="pc-captitle">Titre — Couverture</div></div></div>
-        <div class="pc-slide" data-i="1"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 02</div><div class="pc-mtitle">Sommaire</div><div class="pc-maccent">10 sections · Contexte → Conclusion</div></div><div class="pc-cap"><div class="pc-capnum">02 / 15</div><div class="pc-captitle">Sommaire de la présentation</div></div></div>
-        <div class="pc-slide" data-i="2"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 03</div><div class="pc-mtitle">Contexte &amp; Problématique</div><div class="pc-maccent">ChatGPT, Copilot, Gemini — et derrière : des risques cachés</div></div><div class="pc-cap"><div class="pc-capnum">03 / 15</div><div class="pc-captitle">Contexte &amp; Problématique</div></div></div>
-        <div class="pc-slide" data-i="3"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 04</div><div class="pc-mtitle">Vidéo de contexte</div><div class="pc-maccent">Actil Academy · IA générative &amp; RGPD au travail</div></div><div class="pc-cap"><div class="pc-capnum">04 / 15</div><div class="pc-captitle">Référence vidéo — Actil Academy</div></div></div>
-        <div class="pc-slide" data-i="4"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 05</div><div class="pc-mtitle">Motivation de la veille</div><div class="pc-maccent">Samsung · Dépendance US · RGPD · Open-source</div></div><div class="pc-cap"><div class="pc-capnum">05 / 15</div><div class="pc-captitle">Pourquoi surveiller ce sujet ?</div></div></div>
-        <div class="pc-slide" data-i="5"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 06</div><div class="pc-mtitle">Méthodologie de veille</div><div class="pc-maccent">Ciblage · Collecte · Analyse · Exploitation</div></div><div class="pc-cap"><div class="pc-capnum">06 / 15</div><div class="pc-captitle">Démarche en 4 étapes</div></div></div>
-        <div class="pc-slide" data-i="6"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 07</div><div class="pc-mtitle">Outils de veille</div><div class="pc-maccent">Perplexity · Google Scholar · RSS · Alertes</div></div><div class="pc-cap"><div class="pc-capnum">07 / 15</div><div class="pc-captitle">Outils utilisés</div></div></div>
-        <div class="pc-slide" data-i="7"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 08</div><div class="pc-mtitle">Outils — détail</div><div class="pc-maccent">Sources académiques · Alertes automatiques</div></div><div class="pc-cap"><div class="pc-capnum">08 / 15</div><div class="pc-captitle">Outils de veille — détail</div></div></div>
-        <div class="pc-slide" data-i="8"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 09</div><div class="pc-mtitle">3 Axes de recherche</div><div class="pc-maccent">Déploiement · Souveraineté · Protection données</div></div><div class="pc-cap"><div class="pc-capnum">09 / 15</div><div class="pc-captitle">Axes de recherche identifiés</div></div></div>
-        <div class="pc-slide" data-i="9"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 10</div><div class="pc-mtitle">Article clé — Billiris et al.</div><div class="pc-maccent">ACIS 2025 · 19 risques · 45 études</div></div><div class="pc-cap"><div class="pc-capnum">10 / 15</div><div class="pc-captitle">Articles clés — Billiris ACIS 2025</div></div></div>
-        <div class="pc-slide" data-i="10"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 11</div><div class="pc-mtitle">Article clé — Ng et al.</div><div class="pc-maccent">arXiv 2025 · 12 pays · 43 universités</div></div><div class="pc-cap"><div class="pc-capnum">11 / 15</div><div class="pc-captitle">Articles clés — Ng arXiv 2025</div></div></div>
-        <div class="pc-slide" data-i="11"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 12</div><div class="pc-mtitle">Premiers résultats</div><div class="pc-maccent">Tableau comparatif Cloud · On-premise · Hybride</div></div><div class="pc-cap"><div class="pc-capnum">12 / 15</div><div class="pc-captitle">Résultats — tableau comparatif</div></div></div>
-        <div class="pc-slide" data-i="12"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 13</div><div class="pc-mtitle">Livrables</div><div class="pc-maccent">Rapport · Présentation · Google Site</div></div><div class="pc-cap"><div class="pc-capnum">13 / 15</div><div class="pc-captitle">Livrables du projet</div></div></div>
-        <div class="pc-slide" data-i="13"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 14</div><div class="pc-mtitle">Conclusion &amp; Perspectives</div><div class="pc-maccent">Bilan · AI Act 2026 · Hybride = meilleur compromis</div></div><div class="pc-cap"><div class="pc-capnum">14 / 15</div><div class="pc-captitle">Conclusion &amp; Perspectives</div></div></div>
-        <div class="pc-slide" data-i="14"><div class="pc-mock"><div class="pc-ecl"><div class="pc-ecl-dot"></div><span class="pc-ecl-txt">ECL · MOS 4.4</span></div><div class="pc-mnum">Slide 15</div><div class="pc-mtitle">Références bibliographiques</div><div class="pc-maccent">12 sources · ACIS · arXiv · CNIL · EUR-Lex · WEF</div></div><div class="pc-cap"><div class="pc-capnum">15 / 15</div><div class="pc-captitle">Références bibliographiques</div></div></div>
-      </div>
+      <div class="pc-track" id="pc-track"></div>
     </div>
     <div class="pc-dots" id="pc-dots"></div>
   </div>
@@ -295,8 +286,8 @@
     <p class="stag">Axe 1</p>
     <h2 class="stitre">Déploiement de l'IA générative en entreprise</h2>
     <p class="ssous">Cloud public, on-premise, hybride : quel mode choisir selon ses contraintes ?</p>
-    <p>L'adoption de l'IA générative se structure autour de trois modes de déploiement aux implications très différentes. Selon le rapport Deloitte 2025, seulement 25&nbsp;% des organisations ont plus de 40&nbsp;% de leurs projets IA en production — mais ce chiffre devrait atteindre 54&nbsp;% dans les six mois.</p>
-    <div class="enc"><p class="enc-t">Point clé — Deloitte 2025</p><p>34&nbsp;% des entreprises transforment profondément leurs processus avec l'IA. 37&nbsp;% n'utilisent l'IA qu'en surface. L'écart entre ambition et réalité reste considérable.</p></div>
+    <p>L'adoption de l'IA générative se structure autour de trois modes de déploiement aux implications très différentes. Selon le rapport Deloitte 2025, seulement 25&nbsp;% des organisations ont plus de 40&nbsp;% de leurs projets IA en production, mais ce chiffre devrait atteindre 54&nbsp;% dans les six mois. Le World Economic Forum confirme ce basculement vers une phase de généralisation, encore inégale selon les secteurs.</p>
+    <div class="enc"><p class="enc-t">Point clé (Deloitte 2025)</p><p>34&nbsp;% des entreprises transforment profondément leurs processus avec l'IA. 37&nbsp;% n'utilisent l'IA qu'en surface. L'écart entre ambition et réalité reste considérable.</p></div>
     <h3 class="h3i">Comparatif des modes de déploiement</h3>
     <div class="tw"><table><thead><tr><th>Critère</th><th>Cloud public</th><th>On-premise</th><th>Hybride</th></tr></thead><tbody>
       <tr><td>Performance</td><td><span class="bon">Très haute</span> (GPT-4)</td><td><span class="moy">Bonne</span> (Mistral)</td><td>Flexible</td></tr>
@@ -309,7 +300,7 @@
       <tr><td>Scalabilité</td><td><span class="bon">Infinie</span></td><td>Limitée</td><td><span class="bon">Bonne</span></td></tr>
     </tbody></table></div>
     <p>L'analyse TCO de Lenovo (2025) montre que pour des usages intensifs, l'on-premise devient plus rentable après un point d'équilibre. L'entraînement de Llama 3.1 sur AWS P5 coûterait théoriquement plus de 483&nbsp;M$ en cloud contre un investissement fixe en on-premise.</p>
-    <div class="enc"><p class="enc-t">Tendance — Modèles open-source</p><p>L'explosion des modèles open-source (Mistral, Llama, BLOOM) offre une alternative concrète à la dépendance envers les fournisseurs propriétaires américains, déployables localement et conformes RGPD.</p></div>
+    <div class="enc"><p class="enc-t">Tendance : modèles open-source</p><p>L'explosion des modèles open-source (Mistral, Llama, BLOOM) offre une alternative concrète à la dépendance envers les fournisseurs propriétaires américains, déployables localement et conformes RGPD.</p></div>
   </div>
 </section>
 
@@ -319,14 +310,15 @@
     <p class="stag">Axe 2</p>
     <h2 class="stitre">Souveraineté numérique européenne</h2>
     <p class="ssous">Dépendance structurelle aux acteurs américains et initiatives européennes alternatives</p>
-    <p>La souveraineté numérique désigne la capacité d'un pays à développer et déployer des solutions d'IA en s'appuyant sur des infrastructures, des données, des modèles et des talents locaux. Ce n'est pas qu'une question de propriété : c'est une indépendance stratégique.</p>
-    <div class="enc"><p class="enc-t">Le paradoxe européen — Accenture, 2025</p><p>L'Europe sait qu'il est urgent d'accélérer l'adoption de l'IA. En même temps, le fait que la majorité des technologies proviennent de l'étranger est perçu comme un risque. 65&nbsp;% des organisations reconnaissent ne pouvoir rester compétitives sans fournisseurs non européens.</p></div>
+    <p>La souveraineté numérique désigne la capacité d'un pays à développer et déployer des solutions d'IA en s'appuyant sur des infrastructures, des données, des modèles et des talents locaux. Ce n'est pas qu'une question de propriété : c'est une indépendance stratégique, donc une question de compétitivité, de sécurité et de continuité d'activité.</p>
+    <div class="enc"><p class="enc-t">Le paradoxe européen (Accenture, 2025)</p><p>L'Europe sait qu'il est urgent d'accélérer l'adoption de l'IA. En même temps, le fait que la majorité des technologies proviennent de l'étranger est perçu comme un risque. 65&nbsp;% des organisations reconnaissent ne pouvoir rester compétitives sans fournisseurs non européens.</p></div>
     <div class="chrow">
       <div class="chitem"><div class="chval">&gt;70%</div><div class="chlbl">Part des fournisseurs US (AWS, Azure, GCP) sur le marché cloud EU</div><div class="chsrc">European Economics, 2025</div></div>
       <div class="chitem"><div class="chval">13%</div><div class="chlbl">Part des acteurs européens sur leur propre marché cloud</div><div class="chsrc">European Economics, 2025</div></div>
       <div class="chitem"><div class="chval">62%</div><div class="chlbl">des organisations EU recherchent des solutions d'IA souveraine</div><div class="chsrc">Accenture, 2025</div></div>
       <div class="chitem"><div class="chval">60%</div><div class="chlbl">prévoient d'augmenter leurs investissements en IA souveraine</div><div class="chsrc">Accenture, 2025</div></div>
     </div>
+    <div class="enc"><p class="enc-t">Lecture stratégique (Accenture 2025)</p><p>65&nbsp;% des organisations admettent qu'elles ne peuvent pas se passer de fournisseurs non-européens à court terme. 73&nbsp;% estiment que les pouvoirs publics ont un rôle déterminant pour créer un écosystème souverain crédible à l'échelle européenne.</p></div>
     <h3 class="h3i">Initiatives européennes notables</h3>
     <div class="cg">
       <div class="card"><div class="card-t">Mistral AI</div><p class="card-b">Modèle français open-source compétitif. Déployable en on-premise, conforme RGPD, sans dépendance aux hyperscalers.</p></div>
@@ -345,8 +337,8 @@
     <p class="ssous">RGPD, AI Act, taxonomie des risques et cas concrets</p>
     <p>La protection des données dans les systèmes d'IA générative nécessite une double réponse : technique et humaine. L'article de Billiris, Gill &amp; Bandara (ACIS 2025) apporte la première analyse systématique, tandis que l'incident Samsung (2023) en illustre la dimension humaine.</p>
     <div class="sbox">
-      <h3>📋 Cas d'étude — Affaire Samsung / ChatGPT, avril 2023</h3>
-      <p style="font-size:.85rem;color:var(--gm);margin-bottom:1rem;">Samsung avait levé l'interdiction d'utiliser ChatGPT trois semaines avant les incidents. En vingt jours, trois fuites de données confidentielles ont été documentées.</p>
+      <h3>Cas d'étude : Affaire Samsung / ChatGPT, avril 2023</h3>
+      <p style="font-size:.85rem;color:var(--gm);margin-bottom:1rem;">Samsung avait levé l'interdiction d'utiliser ChatGPT trois semaines avant les incidents. En vingt jours, trois fuites de données confidentielles ont été documentées, puis une limite de 1024 octets par requête a été imposée en interne.</p>
       <ul class="tl">
         <li><strong>Incident 1 :</strong> Code source bogué d'une base de données de semi-conducteurs copié dans ChatGPT pour obtenir un correctif.</li>
         <li><strong>Incident 2 :</strong> Modèles de test confidentiels pour identifier les puces défectueuses soumis en demandant une optimisation du code.</li>
@@ -354,15 +346,15 @@
       </ul>
       <p style="font-size:.79rem;color:var(--bx);margin-top:1rem;font-style:italic;">Note interne Samsung : «&nbsp;Dès que le contenu est saisi dans ChatGPT, les données sont transmises et stockées dans un serveur, ce qui empêche l'entreprise de les récupérer.&nbsp;»</p>
     </div>
-    <h3 class="h3i">Taxonomie des risques IA — Billiris et al. (ACIS 2025)</h3>
-    <p style="font-size:.84rem;color:var(--gm);margin-bottom:1.5rem;">19 risques identifiés à partir de 45 études (2020–2025), répartis en 4 catégories équilibrées.</p>
+    <h3 class="h3i">Taxonomie des risques IA : Billiris et al. (ACIS 2025)</h3>
+    <p style="font-size:.84rem;color:var(--gm);margin-bottom:1.5rem;">19 risques identifiés à partir de 45 études (2020-2025), répartis en 4 catégories équilibrées.</p>
     <div class="txg">
-      <div class="txc"><div class="txp">26,67%</div><div class="txcat">Risques Model-Level</div><div class="txd">Mémorisation des données, attaques par inférence, manipulation des sorties.</div><div class="txtop">Top : <strong>mémorisation (8,82%)</strong> — LLMs &gt;100M param. mémorisent jusqu'à 76% des identifiants</div></div>
-      <div class="txc"><div class="txp">25,87%</div><div class="txcat">Insider Threat</div><div class="txd">Erreur humaine, mauvaise gestion des privilèges, négligence opérationnelle.</div><div class="txtop">Top : <strong>erreur humaine (9,45%)</strong> — 1er facteur de risque toutes catégories</div></div>
+      <div class="txc"><div class="txp">26,67%</div><div class="txcat">Risques Model-Level</div><div class="txd">Mémorisation des données, attaques par inférence, manipulation des sorties.</div><div class="txtop">Top : <strong>mémorisation (8,82%)</strong>; les LLMs &gt;100M param. mémorisent jusqu'à 76% des identifiants</div></div>
+      <div class="txc"><div class="txp">25,87%</div><div class="txcat">Insider Threat</div><div class="txd">Erreur humaine, mauvaise gestion des privilèges, négligence opérationnelle.</div><div class="txtop">Top : <strong>erreur humaine (9,45%)</strong>; 1er facteur de risque toutes catégories</div></div>
       <div class="txc"><div class="txp">25,20%</div><div class="txcat">Risques Infrastructure</div><div class="txd">Exploitation des API, vulnérabilités réseau, erreurs de configuration, fuites logs.</div><div class="txtop">76% des déploiements GenAI présentent des erreurs de configuration initiales</div></div>
       <div class="txc"><div class="txp">22,26%</div><div class="txcat">Risques Dataset</div><div class="txd">Anonymisation insuffisante, sources non vérifiées, rétention excessive des données.</div><div class="txtop">62% des données «&nbsp;anonymisées&nbsp;» peuvent être ré-identifiées via des datasets publics</div></div>
     </div>
-    <h3 class="h3i">Le cadre réglementaire — RGPD &amp; AI Act</h3>
+    <h3 class="h3i">Le cadre réglementaire : RGPD &amp; AI Act</h3>
     <p>La CNIL précise que le RGPD s'applique aux LLMs dès qu'ils contiennent des données personnelles. L'AI Act, entré en vigueur le 1er août 2024 et applicable intégralement au 2 août 2026, introduit une classification par niveau de risque.</p>
     <div class="aag">
       <div class="aalv"><span class="badge br">Inacceptable</span><div class="aat">Interdit</div><div class="aae">Notation sociale, manipulation comportementale, reconnaissance faciale temps réel</div><div class="aao" style="color:var(--bx);">→ Interdiction totale</div></div>
@@ -406,26 +398,26 @@
   <div class="si">
     <p class="stag">Sources</p>
     <h2 class="stitre">Références bibliographiques</h2>
-    <p class="ssous">12 sources — articles scientifiques, textes réglementaires, rapports et ressources audiovisuelles</p>
+    <p class="ssous">12 sources : articles scientifiques, textes réglementaires, rapports et ressources audiovisuelles</p>
     <ul class="srcl">
-      <li><span class="srca">Billiris, G., Gill, A. &amp; Bandara, M.</span> (2025). <span class="srct">Privacy in the Age of AI: A Taxonomy of Data Risks.</span> <span class="srctp">Article · ACIS 2025</span><br><a class="srcln" href="https://arxiv.org/abs/2510.02357" target="_blank">arxiv.org/abs/2510.02357</a></li>
-      <li><span class="srca">Ng, B. Y. et al.</span> (2025). <span class="srct">Analyzing Security and Privacy Challenges in Generative AI Usage Guidelines.</span> <span class="srctp">Prépublication arXiv</span><br><a class="srcln" href="https://arxiv.org/abs/2506.20463" target="_blank">arxiv.org/abs/2506.20463</a></li>
-      <li><span class="srca">CNIL.</span> (2025). <span class="srct">IA et RGPD : nouvelles recommandations pour une innovation responsable.</span> <span class="srctp">Institutionnel</span><br><a class="srcln" href="https://www.cnil.fr/fr/ia-et-rgpd-la-cnil-publie-ses-nouvelles-recommandations-pour-accompagner-une-innovation-responsable" target="_blank">cnil.fr</a></li>
-      <li><span class="srca">CNIL.</span> (2024). <span class="srct">Entrée en vigueur du règlement européen sur l'IA : premières questions-réponses.</span> <span class="srctp">Institutionnel</span><br><a class="srcln" href="https://www.cnil.fr/fr/entree-en-vigueur-du-reglement-europeen-sur-lia-les-premieres-questions-reponses-de-la-cnil" target="_blank">cnil.fr</a></li>
-      <li><span class="srca">Parlement européen et Conseil de l'UE.</span> (2024). <span class="srct">Règlement (UE) 2024/1689 — AI Act.</span> <span class="srctp">Réglementaire</span><br><a class="srcln" href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32024R1689" target="_blank">eur-lex.europa.eu</a></li>
-      <li><span class="srca">Développez.com.</span> (2023). <span class="srct">Les ingénieurs de Samsung ont divulgué des données sensibles via ChatGPT.</span> <span class="srctp">Médiatique</span><br><a class="srcln" href="https://intelligence-artificielle.developpez.com/actu/343363/" target="_blank">developpez.com</a></li>
-      <li><span class="srca">Actil Academy.</span> (2024). <span class="srct">IA générative et RGPD au travail.</span> <span class="srctp">Vidéo en ligne</span><br><a class="srcln" href="https://www.youtube.com/watch?v=woIM7hWLwyk" target="_blank">youtube.com</a></li>
-      <li><span class="srca">Deloitte AI Institute.</span> (2025). <span class="srct">State of AI in the Enterprise: The Untapped Edge.</span> <span class="srctp">Rapport</span><br><a class="srcln" href="https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-generative-ai-in-enterprise.html" target="_blank">deloitte.com</a></li>
-      <li><span class="srca">Wani, S. G. et al.</span> (2025). <span class="srct">On-Premise vs Cloud: Generative AI Total Cost of Ownership.</span> <span class="srctp">Rapport technique</span><br><a class="srcln" href="https://lenovopress.lenovo.com/lp2225-on-premise-vs-cloud-generative-ai-total-cost-of-ownership-2025-edition" target="_blank">lenovopress.lenovo.com</a></li>
-      <li><span class="srca">Accenture.</span> (2025). <span class="srct">L'Europe cherche à renforcer sa souveraineté en matière d'IA.</span> <span class="srctp">Rapport</span><br><a class="srcln" href="https://newsroom.accenture.fr/fr/news/2025/l-europe-cherche-a-renforcer-sa-souverainete-en-matiere-d-ia-selon-le-nouveau-rapport-d-accenture" target="_blank">newsroom.accenture.fr</a></li>
-      <li><span class="srca">European Economics.</span> (2025). <span class="srct">L'IA en Europe : de la dépendance à la souveraineté.</span> <span class="srctp">Médiatique</span><br><a class="srcln" href="https://www.europeaneconomics.com/ia-europe-dependance-souverainete/" target="_blank">europeaneconomics.com</a></li>
-      <li><span class="srca">Sachdev, U.</span> (2025). <span class="srct">Enterprise AI is at a tipping point, here's what comes next.</span> <span class="srctp">Article en ligne</span><br><a class="srcln" href="https://www.weforum.org/stories/2025/07/enterprise-ai-tipping-point-what-comes-next/" target="_blank">weforum.org</a></li>
+      <li><span class="srca">Billiris, G., Gill, A. &amp; Bandara, M.</span> (2025). <span class="srct">Privacy in the Age of AI: A Taxonomy of Data Risks.</span> <span class="srctp">Article · ACIS 2025</span><br><a class="srcln" href="https://arxiv.org/abs/2510.02357" target="_blank" rel="noopener noreferrer">arxiv.org/abs/2510.02357</a></li>
+      <li><span class="srca">Ng, B. Y. et al.</span> (2025). <span class="srct">Analyzing Security and Privacy Challenges in Generative AI Usage Guidelines for Higher Education.</span> <span class="srctp">Prépublication arXiv</span><br><a class="srcln" href="https://arxiv.org/abs/2506.20463" target="_blank" rel="noopener noreferrer">arxiv.org/abs/2506.20463</a></li>
+      <li><span class="srca">CNIL.</span> (2025). <span class="srct">IA et RGPD : nouvelles recommandations pour une innovation responsable.</span> <span class="srctp">Institutionnel</span><br><a class="srcln" href="https://www.cnil.fr/fr/ia-et-rgpd-la-cnil-publie-ses-nouvelles-recommandations-pour-accompagner-une-innovation-responsable" target="_blank" rel="noopener noreferrer">cnil.fr</a></li>
+      <li><span class="srca">CNIL.</span> (2024). <span class="srct">Entrée en vigueur du règlement européen sur l'IA : premières questions-réponses.</span> <span class="srctp">Institutionnel</span><br><a class="srcln" href="https://www.cnil.fr/fr/entree-en-vigueur-du-reglement-europeen-sur-lia-les-premieres-questions-reponses-de-la-cnil" target="_blank" rel="noopener noreferrer">cnil.fr</a></li>
+      <li><span class="srca">Parlement européen et Conseil de l'UE.</span> (2024). <span class="srct">Règlement (UE) 2024/1689, AI Act.</span> <span class="srctp">Réglementaire</span><br><a class="srcln" href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32024R1689" target="_blank" rel="noopener noreferrer">eur-lex.europa.eu</a></li>
+      <li><span class="srca">Développez.com.</span> (2023). <span class="srct">Les ingénieurs de Samsung ont divulgué des données sensibles en collant du code propriétaire dans ChatGPT.</span> <span class="srctp">Médiatique</span><br><a class="srcln" href="https://intelligence-artificielle.developpez.com/actu/343363/" target="_blank" rel="noopener noreferrer">developpez.com</a></li>
+      <li><span class="srca">Actil Academy.</span> (2024). <span class="srct">IA générative et RGPD au travail.</span> <span class="srctp">Vidéo en ligne</span><br><a class="srcln" href="https://www.youtube.com/watch?v=woIM7hWLwyk" target="_blank" rel="noopener noreferrer">youtube.com</a></li>
+      <li><span class="srca">Deloitte AI Institute.</span> (2025). <span class="srct">State of AI in the Enterprise: The Untapped Edge.</span> <span class="srctp">Rapport · 3 235 décideurs · 24 pays</span><br><a class="srcln" href="https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-generative-ai-in-enterprise.html" target="_blank" rel="noopener noreferrer">deloitte.com</a></li>
+      <li><span class="srca">Wani, S. G. et al.</span> (2025). <span class="srct">On-Premise vs Cloud: Generative AI Total Cost of Ownership (2025 Edition).</span> <span class="srctp">Rapport technique · Lenovo Press LP2225</span><br><a class="srcln" href="https://lenovopress.lenovo.com/lp2225-on-premise-vs-cloud-generative-ai-total-cost-of-ownership-2025-edition" target="_blank" rel="noopener noreferrer">lenovopress.lenovo.com</a></li>
+      <li><span class="srca">Accenture.</span> (2025). <span class="srct">L'Europe cherche à renforcer sa souveraineté en matière d'IA.</span> <span class="srctp">Rapport · 1 928 organisations · 28 pays</span><br><a class="srcln" href="https://newsroom.accenture.fr/fr/news/2025/l-europe-cherche-a-renforcer-sa-souverainete-en-matiere-d-ia-selon-le-nouveau-rapport-d-accenture" target="_blank" rel="noopener noreferrer">newsroom.accenture.fr</a></li>
+      <li><span class="srca">European Economics.</span> (2025). <span class="srct">L'IA en Europe : de la dépendance à la souveraineté.</span> <span class="srctp">Médiatique</span><br><a class="srcln" href="https://www.europeaneconomics.com/ia-europe-dependance-souverainete/" target="_blank" rel="noopener noreferrer">europeaneconomics.com</a></li>
+      <li><span class="srca">Sachdev, U.</span> (2025). <span class="srct">Enterprise AI is at a tipping point, here's what comes next.</span> <span class="srctp">Article en ligne · World Economic Forum</span><br><a class="srcln" href="https://www.weforum.org/stories/2025/07/enterprise-ai-tipping-point-what-comes-next/" target="_blank" rel="noopener noreferrer">weforum.org</a></li>
     </ul>
     <h3 class="h3i" style="margin-top:3rem;">Livrables du projet</h3>
     <div class="lvg">
-      <a class="lv" href="rapport-methodologique.pdf" target="_blank"><div class="lvicon">📄</div><div class="lvt">Rapport méthodologique</div><div class="lvd">Démarche, analyse des 12 sources, confrontation et conclusions. PDF complet.</div></a>
-      <a class="lv" href="presentation.pdf" target="_blank"><div class="lvicon">📊</div><div class="lvt">Présentation orale</div><div class="lvd">Support de soutenance — 15 slides — 06 mars 2026.</div></a>
-      <a class="lv" href="https://github.com/Bamishola/veille-technologique" target="_blank" rel="noopener"><div class="lvicon">⌨</div><div class="lvt">Code source</div><div class="lvd">Dépôt GitHub. Déployé sur Netlify à chaque push.</div></a>
+      <a class="lv" href="rapport-methodologique.pdf" target="_blank" rel="noopener noreferrer"><div class="lvicon">PDF</div><div class="lvt">Rapport méthodologique</div><div class="lvd">Démarche, analyse des 12 sources, confrontation et conclusions. PDF complet.</div></a>
+      <a class="lv" href="presentation.pdf" target="_blank" rel="noopener noreferrer"><div class="lvicon">PPT</div><div class="lvt">Présentation orale</div><div class="lvd">Support de soutenance, 15 slides, 06 mars 2026.</div></a>
+      <a class="lv" href="https://github.com/Bamishola/veille-technologique" target="_blank" rel="noopener noreferrer"><div class="lvicon">GIT</div><div class="lvt">Code source</div><div class="lvd">Dépôt GitHub. Déployé sur Netlify à chaque push.</div></a>
     </div>
   </div>
 </section>
@@ -433,19 +425,20 @@
 <!-- MODAL -->
 <div class="modal-ov" id="modal">
   <div class="modal-c">
-    <button class="modal-close" id="modal-close">✕</button>
+    <button class="modal-close" id="modal-close" type="button" aria-label="Fermer la modale">✕</button>
     <div class="modal-disp" id="modal-disp"></div>
+    <div class="modal-meta" id="modal-meta"></div>
     <div class="modal-nav">
-      <button class="modal-nbtn" id="modal-prev">&#8592;</button>
-      <span class="modal-ctr" id="modal-ctr">1 / 15</span>
-      <button class="modal-nbtn" id="modal-next">&#8594;</button>
+      <button class="modal-nbtn" id="modal-prev" type="button" aria-label="Slide précédente">&#8592;</button>
+      <span class="modal-ctr" id="modal-ctr">1 / 16</span>
+      <button class="modal-nbtn" id="modal-next" type="button" aria-label="Slide suivante">&#8594;</button>
     </div>
   </div>
 </div>
 
 <footer>
-  <p><strong>Bamishola LOKE</strong> — MOS 4.4 Veille technologique — École Centrale Lyon, Promo 2026</p>
-  <p>Tuteur : René CHALON · Option Informatique — Intrapreneur/Entrepreneur</p>
+  <p><strong>Bamishola LOKE</strong>, MOS 4.4 Veille technologique, École Centrale Lyon (Promo 2026)</p>
+  <p>Tuteur : René CHALON · Option Informatique (Intrapreneur/Entrepreneur)</p>
   <p style="margin-top:.5rem;opacity:.45;">Veille conduite de janvier à mars 2026 · 12 sources · Publié sur Netlify</p>
 </footer>
 
@@ -454,11 +447,15 @@
 function makeCarousel(trackId, prevId, nextId, dotsId) {
   const track = document.getElementById(trackId);
   const dotsWrap = document.getElementById(dotsId);
+  const prevBtn = document.getElementById(prevId);
+  const nextBtn = document.getElementById(nextId);
+  if (!track || !dotsWrap || !prevBtn || !nextBtn) return;
   const slides = track.querySelectorAll('[class*="-slide"]');
   const total = slides.length;
   let cur = 0;
 
   function vis() {
+    if (trackId === 'pc-track' || trackId === 'dc-track') return 1;
     if (window.innerWidth < 560) return 1;
     if (window.innerWidth < 900) return 2;
     return 3;
@@ -478,51 +475,172 @@ function makeCarousel(trackId, prevId, nextId, dotsId) {
 
   function go(idx) {
     cur = Math.max(0, Math.min(idx, maxI()));
-    const gap = 24;
-    const sw = slides[0] ? slides[0].offsetWidth + gap : 0;
-    track.style.transform = 'translateX(-' + (cur * sw) + 'px)';
+    if (trackId === 'pc-track' || trackId === 'dc-track') {
+      // Use percentage movement to avoid sub-pixel drift and ensure exactly one slide is visible.
+      track.style.transform = 'translateX(-' + (cur * 100) + '%)';
+    } else {
+      const gap = parseFloat(window.getComputedStyle(track).gap || '24') || 24;
+      const sw = slides[0] ? slides[0].offsetWidth + gap : 0;
+      track.style.transform = 'translateX(-' + (cur * sw) + 'px)';
+    }
     const cls = trackId === 'dc-track' ? 'dc-dot' : 'pc-dot';
     dotsWrap.querySelectorAll('.' + cls).forEach((d, i) => d.classList.toggle('active', i === cur));
+    prevBtn.style.opacity = cur === 0 ? '.5' : '1';
+    nextBtn.style.opacity = cur === maxI() ? '.5' : '1';
   }
 
   buildDots();
-  document.getElementById(prevId).addEventListener('click', () => go(cur - 1));
-  document.getElementById(nextId).addEventListener('click', () => go(cur + 1));
+  go(0);
+  prevBtn.addEventListener('click', () => go(cur - 1));
+  nextBtn.addEventListener('click', () => go(cur + 1));
   window.addEventListener('resize', () => { buildDots(); go(Math.min(cur, maxI())); });
 }
 
+const deloitteSlides = [
+  { num: '01' },
+  { num: '02' },
+  { num: '03' },
+  { num: '04' },
+  { num: '05' },
+  { num: '06' },
+  { num: '07' }
+];
+
+function resolveDeloitteImage(num) {
+  // Convention: image_deloitte/deloitte-01.png ... image_deloitte/deloitte-07.png
+  return 'image_deloitte/deloitte-' + num + '.png';
+}
+
+function buildDeloitteTrack() {
+  const track = document.getElementById('dc-track');
+  if (!track) return;
+  track.innerHTML = '';
+
+  deloitteSlides.forEach((slide, i) => {
+    const card = document.createElement('div');
+    card.className = 'dc-slide';
+    card.dataset.i = String(i);
+
+    const frame = document.createElement('div');
+    frame.className = 'dc-frame';
+
+    const img = document.createElement('img');
+    img.className = 'dc-img';
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.alt = 'Deloitte key finding slide ' + slide.num;
+    img.src = resolveDeloitteImage(slide.num);
+    img.addEventListener('error', () => {
+      if (!img.dataset.jpgTried) {
+        img.dataset.jpgTried = '1';
+        img.src = img.src.replace(/\.png$/, '.jpg');
+        return;
+      }
+      frame.classList.add('is-missing');
+    });
+
+    const fallback = document.createElement('div');
+    fallback.className = 'dc-fallback';
+    fallback.textContent = 'Image Deloitte manquante (slide ' + slide.num + ')';
+
+    frame.appendChild(img);
+    frame.appendChild(fallback);
+    card.appendChild(frame);
+    track.appendChild(card);
+  });
+}
+
+buildDeloitteTrack();
 makeCarousel('dc-track', 'dc-prev', 'dc-next', 'dc-dots');
+
+const presentationSlides = [
+  { num: '01', title: "L'IA générative en entreprise", caption: 'Titre : couverture' },
+  { num: '02', title: 'Sommaire', caption: 'Sommaire de la présentation' },
+  { num: '03', title: 'Contexte & Problématique', caption: 'Contexte & Problématique' },
+  { num: '04', title: 'Vidéo de contexte', caption: 'Référence vidéo (Actil Academy)' },
+  { num: '05', title: 'Motivation de la veille', caption: 'Pourquoi surveiller ce sujet ?' },
+  { num: '06', title: 'Méthodologie de veille', caption: 'Démarche en 4 étapes' },
+  { num: '07', title: 'Outils de veille', caption: 'Outils utilisés' },
+  { num: '08', title: 'Outils, détail', caption: 'Outils de veille, détail' },
+  { num: '09', title: '3 Axes de recherche', caption: 'Axes de recherche identifiés' },
+  { num: '10', title: 'Article clé : Billiris et al.', caption: 'Articles clés : Billiris ACIS 2025' },
+  { num: '11', title: 'Article clé : Ng et al.', caption: 'Articles clés : Ng arXiv 2025' },
+  { num: '12', title: 'Premiers résultats', caption: 'Résultats : tableau comparatif' },
+  { num: '13', title: 'Livrables', caption: 'Livrables du projet' },
+  { num: '14', title: 'Conclusion & Perspectives', caption: 'Conclusion & Perspectives' },
+  { num: '15', title: 'Références bibliographiques', caption: 'Références bibliographiques' },
+  { num: '16', title: 'Annexe', caption: 'Annexe complémentaire' }
+];
+
+function resolveSlideImage(num) {
+  // Convention: placer les fichiers dans image_present sous la forme slide-01.png ... slide-16.png
+  return 'image_present/slide-' + num + '.png';
+}
+
+function buildPresentationTrack() {
+  const track = document.getElementById('pc-track');
+  if (!track) return;
+  track.innerHTML = '';
+
+  presentationSlides.forEach((slide, i) => {
+    const card = document.createElement('div');
+    card.className = 'pc-slide';
+    card.dataset.i = String(i);
+
+    const frame = document.createElement('div');
+    frame.className = 'pc-frame';
+
+    const img = document.createElement('img');
+    img.className = 'pc-img';
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.alt = 'Aperçu de la slide ' + slide.num;
+    img.src = resolveSlideImage(slide.num);
+    img.addEventListener('error', () => {
+      if (!img.dataset.jpgTried) {
+        img.dataset.jpgTried = '1';
+        img.src = img.src.replace(/\.png$/, '.jpg');
+        return;
+      }
+      frame.classList.add('is-missing');
+    });
+
+    const fallback = document.createElement('div');
+    fallback.className = 'pc-fallback';
+    fallback.textContent = 'Image manquante (slide ' + slide.num + ')';
+
+    frame.appendChild(img);
+    frame.appendChild(fallback);
+    card.appendChild(frame);
+    track.appendChild(card);
+  });
+}
+
+buildPresentationTrack();
 makeCarousel('pc-track', 'pc-prev', 'pc-next', 'pc-dots');
 
 // MODAL PRÉSENTATION
 (function() {
-  const slides = [
-    {num:'01',title:"L'IA générative en entreprise",accent:"Enjeux de souveraineté et de protection des données"},
-    {num:'02',title:"Sommaire",accent:"10 sections · Contexte → Conclusion"},
-    {num:'03',title:"Contexte &amp; Problématique",accent:"ChatGPT, Copilot, Gemini — et derrière : des risques cachés"},
-    {num:'04',title:"Vidéo de contexte",accent:"Actil Academy · IA générative &amp; RGPD au travail"},
-    {num:'05',title:"Motivation de la veille",accent:"Samsung · Dépendance US · RGPD · Open-source"},
-    {num:'06',title:"Méthodologie de veille",accent:"Ciblage · Collecte · Analyse · Exploitation"},
-    {num:'07',title:"Outils de veille",accent:"Perplexity · Google Scholar · RSS · Alertes"},
-    {num:'08',title:"Outils — détail",accent:"Sources académiques · Alertes automatiques"},
-    {num:'09',title:"3 Axes de recherche",accent:"Déploiement · Souveraineté · Protection données"},
-    {num:'10',title:"Article clé — Billiris et al.",accent:"ACIS 2025 · 19 risques · 45 études"},
-    {num:'11',title:"Article clé — Ng et al.",accent:"arXiv 2025 · 12 pays · 43 universités"},
-    {num:'12',title:"Premiers résultats",accent:"Tableau comparatif Cloud · On-premise · Hybride"},
-    {num:'13',title:"Livrables",accent:"Rapport · Présentation · Google Site"},
-    {num:'14',title:"Conclusion &amp; Perspectives",accent:"Bilan · AI Act 2026 · Hybride = meilleur compromis"},
-    {num:'15',title:"Références bibliographiques",accent:"12 sources · ACIS · arXiv · CNIL · EUR-Lex · WEF"}
-  ];
+  const slides = presentationSlides;
   const total = slides.length;
   const modal = document.getElementById('modal');
   const disp = document.getElementById('modal-disp');
+  const meta = document.getElementById('modal-meta');
   const ctr = document.getElementById('modal-ctr');
   let idx = 0;
 
   function render(i) {
     idx = i;
     const s = slides[i];
-    disp.innerHTML = '<div class="modal-mock"><div class="modal-mnum">Slide ' + s.num + ' / 15</div><div class="modal-mtitle">' + s.title + '</div><div class="modal-maccent">' + s.accent + '</div></div>';
+    disp.innerHTML = '<img class="modal-img" src="' + resolveSlideImage(s.num) + '" alt="Slide ' + s.num + '" />';
+    const modalImg = disp.querySelector('.modal-img');
+    modalImg.addEventListener('error', () => {
+      if (!modalImg.dataset.jpgTried) {
+        modalImg.dataset.jpgTried = '1';
+        modalImg.src = modalImg.src.replace(/\.png$/, '.jpg');
+      }
+    });
+    meta.innerHTML = '<strong>Slide ' + s.num + '</strong><br>' + s.title;
     ctr.textContent = (i + 1) + ' / ' + total;
   }
 
