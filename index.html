@@ -125,11 +125,11 @@
     .sec:nth-of-type(odd){background:var(--blanc)}
     .sec:nth-of-type(even){background:var(--fs)}
     .si{max-width:880px;margin:0 auto}
-    .stag{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bx);font-weight:600;margin-bottom:.5rem;display:flex;align-items:center;gap:.6rem}
+    .stag{font-size:.79rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bx);font-weight:700;margin-bottom:.55rem;display:flex;align-items:center;gap:.6rem}
     .stag::before{content:'';display:block;width:1.5rem;height:1px;background:var(--bx)}
-    .stitre{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:var(--noir);margin-bottom:.5rem;line-height:1.2}
-    .ssous{font-size:1.01rem;color:var(--gm);font-style:italic;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--ligne)}
-    p{margin-bottom:1.2rem;color:var(--gf)}
+    .stitre{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.4vw,2.7rem);font-weight:700;color:var(--noir);margin-bottom:.65rem;line-height:1.16;letter-spacing:-.01em}
+    .ssous{font-size:1.08rem;color:#5c5c5c;font-style:normal;line-height:1.65;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--ligne)}
+    p{margin-bottom:1.2rem;color:var(--gf);font-size:1.02rem;line-height:1.9}
     p:last-child{margin-bottom:0}
     .enc{border-left:3px solid var(--bx);padding:1.2rem 1.5rem;background:var(--bxp);margin:2rem 0}
     .enc-t{font-family:'Playfair Display',serif;font-size:.93rem;font-weight:600;color:var(--bx);margin-bottom:.4rem}
@@ -155,7 +155,7 @@
     .chlbl{font-size:.82rem;color:var(--gm);line-height:1.45}
     .chsrc{font-size:.62rem;color:var(--gc);margin-top:.3rem}
     .sbox{border:1px solid #d4a5ac;background:#fff8f8;padding:2rem;margin:2rem 0}
-    .sbox h3{font-family:'Playfair Display',serif;font-size:1rem;color:var(--bx);margin-bottom:1rem}
+    .sbox h3{font-family:'Playfair Display',serif;font-size:1.14rem;color:var(--bx);margin-bottom:1rem;line-height:1.35}
     .tl{list-style:none;counter-reset:inc}
     .tl li{counter-increment:inc;padding:.6rem 0 .6rem 2.5rem;position:relative;font-size:.86rem;color:var(--gf);border-bottom:1px solid #f0e0e2}
     .tl li:last-child{border-bottom:none}
@@ -176,11 +176,12 @@
     .aao{font-size:.74rem;font-weight:600}
     .convg{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0}
     @media(max-width:640px){.convg{grid-template-columns:1fr}}
-    .convc h3{font-family:'Playfair Display',serif;font-size:1.02rem;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:2px solid var(--bx);color:var(--noir)}
-    .convi{padding:.75rem 0;border-bottom:1px solid var(--ligne);font-size:.85rem}
+    .convc h3{font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:2px solid var(--bx);color:var(--noir)}
+    .convi{padding:.9rem 0;border-bottom:1px solid var(--ligne);font-size:.92rem}
     .convi:last-child{border-bottom:none}
-    .convl{font-weight:600;color:var(--noir);font-size:.82rem;margin-bottom:.2rem}
-    .convs{font-size:.7rem;color:var(--gc);font-style:italic;margin-top:.25rem}
+    .convl{font-weight:700;color:var(--noir);font-size:.98rem;margin-bottom:.22rem;line-height:1.4}
+    .convi p{font-size:.93rem;margin:.25rem 0 0;color:var(--gf);line-height:1.7}
+    .convs{font-size:.78rem;color:#7a7a7a;font-style:italic;margin-top:.3rem}
     .srcl{list-style:none;counter-reset:src;margin:1.5rem 0}
     .srcl li{counter-increment:src;padding:1rem 1rem 1rem 3rem;position:relative;border-bottom:1px solid var(--ligne);font-size:.92rem;line-height:1.65}
     .srcl li:last-child{border-bottom:none}
@@ -195,7 +196,38 @@
     .lvicon{display:inline-block;font-size:.62rem;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--bx);border:1px solid var(--ligne);padding:.2rem .4rem;margin-bottom:.7rem;background:var(--blanc)}
     .lvt{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:600;color:var(--noir);margin-bottom:.3rem}
     .lvd{font-size:.86rem;color:var(--gm)}
-    .h3i{font-family:'Playfair Display',serif;font-size:1.03rem;font-weight:600;color:var(--noir);margin:2rem 0 .7rem}
+    .h3i{font-family:'Playfair Display',serif;font-size:1.24rem;font-weight:600;color:var(--noir);margin:2.2rem 0 .8rem;line-height:1.35}
+    .met-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:var(--ligne);border:1px solid var(--ligne);margin:2rem 0}
+    .met-step{background:var(--blanc);padding:1.35rem 1.1rem}
+    .met-num{font-size:.7rem;letter-spacing:.1em;color:var(--bx);font-weight:700;margin-bottom:.45rem}
+    .met-title{font-family:'Playfair Display',serif;font-size:1.02rem;color:var(--noir);margin-bottom:.35rem}
+    .met-text{font-size:.86rem;color:var(--gm);line-height:1.55}
+    .met-tools{margin-top:2rem;border:1px solid var(--ligne);background:var(--blanc)}
+    .met-tools table{font-size:.84rem}
+    .fig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1rem;margin:2rem 0}
+    .fig-item{background:var(--blanc);border:1px solid var(--ligne);overflow:hidden}
+    .fig-item img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#ececec}
+    .fig-cap{padding:.8rem .95rem;border-top:1px solid var(--ligne)}
+    .fig-cap strong{display:block;color:var(--noir);font-size:.86rem;margin-bottom:.2rem}
+    .fig-cap span{font-size:.76rem;color:var(--gm)}
+    .rpt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:2rem 0}
+    .rpt-item{background:var(--blanc);border:1px solid var(--ligne);overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s}
+    .rpt-item:hover{transform:translateY(-3px);border-color:var(--bx);box-shadow:0 10px 30px rgba(0,0,0,.08)}
+    .rpt-link{display:block;text-decoration:none;color:inherit}
+    .rpt-link img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#ececec}
+    .rpt-cap{padding:.85rem .95rem;border-top:1px solid var(--ligne)}
+    .rpt-cap strong{display:block;font-size:.9rem;color:var(--noir);margin-bottom:.2rem}
+    .rpt-cap span{font-size:.8rem;color:var(--gm);line-height:1.5}
+    .lp-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2rem 0}
+    @media(max-width:760px){.lp-grid{grid-template-columns:1fr}}
+    .lp-box{border:1px solid var(--ligne);padding:1.35rem;background:var(--blanc)}
+    .lp-box h3{font-family:'Playfair Display',serif;color:var(--noir);font-size:1.02rem;margin-bottom:.8rem;padding-bottom:.5rem;border-bottom:2px solid var(--bx)}
+    .lp-list{list-style:none}
+    .lp-list li{font-size:.84rem;color:var(--gf);line-height:1.6;padding:.45rem 0;border-bottom:1px solid var(--ligne)}
+    .lp-list li:last-child{border-bottom:none}
+    .context-note{font-size:.94rem;color:var(--gm);margin-bottom:1rem;line-height:1.75}
+    .quote-note{font-size:.89rem;color:var(--bx);margin-top:1rem;font-style:italic;line-height:1.65}
+    .mini-note{font-size:.92rem;color:var(--gm);margin-bottom:1.5rem;line-height:1.75}
     footer{background:var(--noir);color:#4a4a4a;text-align:center;padding:3rem 2rem;font-size:.76rem;line-height:1.9;border-top:1px solid rgba(122,30,46,.25)}
     footer strong{color:#777}
   </style>
@@ -208,6 +240,7 @@
     <ul class="nav-links">
       <li><a href="#dc">Données Deloitte</a></li>
       <li><a href="#pc">Présentation</a></li>
+      <li><a href="#rapport-visuel">Rapport visuel</a></li>
       <li><a href="#axe1">Déploiement</a></li>
       <li><a href="#axe2">Souveraineté</a></li>
       <li><a href="#axe3">Protection</a></li>
@@ -280,6 +313,32 @@
   </div>
 </section>
 
+<!-- METHODOLOGIE -->
+<section id="methodo" class="sec">
+  <div class="si">
+    <p class="stag">Méthodologie</p>
+    <h2 class="stitre">Démarche de veille appliquée</h2>
+    <p class="ssous">Une méthode en 4 étapes, centrée sur la fiabilité des sources et l'exploitabilité des résultats</p>
+    <p>La veille a été conduite de janvier à mars 2026 avec un objectif de décision, et non de simple compilation d'informations. Le protocole a combiné sélection de sources académiques, validation institutionnelle et confrontation d'analyses sectorielles.</p>
+    <div class="met-grid">
+      <div class="met-step"><div class="met-num">ETAPE 01</div><div class="met-title">Cadrage</div><p class="met-text">Définition de la problématique, des mots-clés et des critères de sélection (pertinence, fiabilité, actualité, complémentarité).</p></div>
+      <div class="met-step"><div class="met-num">ETAPE 02</div><div class="met-title">Collecte</div><p class="met-text">Constitution d'un corpus de 12 sources, en combinant articles scientifiques, textes réglementaires, rapports d'entreprises et ressources audiovisuelles.</p></div>
+      <div class="met-step"><div class="met-num">ETAPE 03</div><div class="met-title">Analyse</div><p class="met-text">Extraction des indicateurs clés, comparaison des convergences et identification des divergences méthodologiques ou sectorielles.</p></div>
+      <div class="met-step"><div class="met-num">ETAPE 04</div><div class="met-title">Restitution</div><p class="met-text">Structuration en 3 axes (déploiement, souveraineté, protection), puis formulation d'une réponse opérationnelle à la problématique.</p></div>
+    </div>
+    <div class="met-tools">
+      <table>
+        <thead><tr><th>Bloc</th><th>Choix retenu</th><th>Valeur ajoutée</th></tr></thead>
+        <tbody>
+          <tr><td>Périmètre</td><td>Janvier-Mars 2026, IA générative en entreprise</td><td>Focalisation sur les décisions de déploiement à court et moyen terme</td></tr>
+          <tr><td>Corpus</td><td>12 sources validées, multidisciplinaires</td><td>Équilibre entre preuves académiques et enjeux de terrain</td></tr>
+          <tr><td>Sortie</td><td>Site, rapport PDF, présentation de soutenance</td><td>Traçabilité complète de la démarche et des résultats</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 <!-- AXE 1 -->
 <section id="axe1" class="sec">
   <div class="si">
@@ -301,6 +360,62 @@
     </tbody></table></div>
     <p>L'analyse TCO de Lenovo (2025) montre que pour des usages intensifs, l'on-premise devient plus rentable après un point d'équilibre. L'entraînement de Llama 3.1 sur AWS P5 coûterait théoriquement plus de 483&nbsp;M$ en cloud contre un investissement fixe en on-premise.</p>
     <div class="enc"><p class="enc-t">Tendance : modèles open-source</p><p>L'explosion des modèles open-source (Mistral, Llama, BLOOM) offre une alternative concrète à la dépendance envers les fournisseurs propriétaires américains, déployables localement et conformes RGPD.</p></div>
+  </div>
+</section>
+
+<!-- FIGURES CLES -->
+<section id="figures" class="sec">
+  <div class="si">
+    <p class="stag">Figures</p>
+    <h2 class="stitre">Figures clés de l'analyse</h2>
+    <p class="ssous">Captures des résultats Deloitte mobilisés pour les 7 constats principaux</p>
+    <p>Ces figures servent de support visuel aux indicateurs discutés dans l'analyse. Elles facilitent la lecture comparative des tendances (production, transformation, souveraineté, agentic AI, physical AI et préparation opérationnelle).</p>
+    <div class="fig-grid">
+      <figure class="fig-item"><img src="image_deloitte/deloitte-01.png" alt="Figure Deloitte 1"><figcaption class="fig-cap"><strong>Figure 1</strong><span>Passage du pilote à l'échelle</span></figcaption></figure>
+      <figure class="fig-item"><img src="image_deloitte/deloitte-02.png" alt="Figure Deloitte 2"><figcaption class="fig-cap"><strong>Figure 2</strong><span>Productivité versus réinvention</span></figcaption></figure>
+      <figure class="fig-item"><img src="image_deloitte/deloitte-03.png" alt="Figure Deloitte 3"><figcaption class="fig-cap"><strong>Figure 3</strong><span>Fluence IA et refonte des rôles</span></figcaption></figure>
+      <figure class="fig-item"><img src="image_deloitte/deloitte-04.png" alt="Figure Deloitte 4"><figcaption class="fig-cap"><strong>Figure 4</strong><span>Souveraineté, dimension stratégique</span></figcaption></figure>
+      <figure class="fig-item"><img src="image_deloitte/deloitte-05.png" alt="Figure Deloitte 5"><figcaption class="fig-cap"><strong>Figure 5</strong><span>Montée de l'IA agentique</span></figcaption></figure>
+      <figure class="fig-item"><img src="image_deloitte/deloitte-06.png" alt="Figure Deloitte 6"><figcaption class="fig-cap"><strong>Figure 6</strong><span>Expansion de l'IA physique</span></figcaption></figure>
+    </div>
+    <div class="enc"><p class="enc-t">Source des figures</p><p>Deloitte AI Institute, State of AI in the Enterprise, 2026. Les visuels sont utilisés ici comme appui de lecture des données discutées dans le rapport méthodologique.</p></div>
+  </div>
+</section>
+
+<!-- RAPPORT VISUEL -->
+<section id="rapport-visuel" class="sec">
+  <div class="si">
+    <p class="stag">Annexes</p>
+    <h2 class="stitre">Extraits visuels du rapport méthodologique</h2>
+    <p class="ssous">4 captures intégrées pour appuyer la lecture du raisonnement et des résultats</p>
+    <p>Cette annexe regroupe des visuels issus du rapport PDF afin d'améliorer la continuité entre le site, le document méthodologique et la soutenance. Cliquer sur une image ouvre la version originale en taille réelle.</p>
+    <div class="rpt-grid">
+      <figure class="rpt-item">
+        <a class="rpt-link" href="image_rapport/rapport-01.png" target="_blank" rel="noopener noreferrer">
+          <img src="image_rapport/rapport-01.png" alt="Extrait du rapport méthodologique 1">
+          <figcaption class="rpt-cap"><strong>Extrait 1</strong><span>Cadre d'analyse et structuration de la problématique.</span></figcaption>
+        </a>
+      </figure>
+      <figure class="rpt-item">
+        <a class="rpt-link" href="image_rapport/rapport-02.png" target="_blank" rel="noopener noreferrer">
+          <img src="image_rapport/rapport-02.png" alt="Extrait du rapport méthodologique 2">
+          <figcaption class="rpt-cap"><strong>Extrait 2</strong><span>Résultats quantitatifs mobilisés dans les axes d'analyse.</span></figcaption>
+        </a>
+      </figure>
+      <figure class="rpt-item">
+        <a class="rpt-link" href="image_rapport/rapport-03.png" target="_blank" rel="noopener noreferrer">
+          <img src="image_rapport/rapport-03.png" alt="Extrait du rapport méthodologique 3">
+          <figcaption class="rpt-cap"><strong>Extrait 3</strong><span>Comparaison des scénarios et implications opérationnelles.</span></figcaption>
+        </a>
+      </figure>
+      <figure class="rpt-item">
+        <a class="rpt-link" href="image_rapport/rapport-04.png" target="_blank" rel="noopener noreferrer">
+          <img src="image_rapport/rapport-04.png" alt="Extrait du rapport méthodologique 4">
+          <figcaption class="rpt-cap"><strong>Extrait 4</strong><span>Synthèse des recommandations et axes de décision.</span></figcaption>
+        </a>
+      </figure>
+    </div>
+    <div class="enc"><p class="enc-t">Document de référence</p><p>Version complète disponible dans le livrable <strong>rapport-methodologique.pdf</strong>, avec les explications détaillées associées à chaque visuel.</p></div>
   </div>
 </section>
 
@@ -329,6 +444,35 @@
   </div>
 </section>
 
+<!-- LIMITES ET PERSPECTIVES -->
+<section id="limites" class="sec">
+  <div class="si">
+    <p class="stag">Discussion</p>
+    <h2 class="stitre">Limites de la veille et perspectives</h2>
+    <p class="ssous">Cadre critique pour interpréter les résultats avec rigueur</p>
+    <div class="lp-grid">
+      <article class="lp-box">
+        <h3>Limites identifiées</h3>
+        <ul class="lp-list">
+          <li>Fenêtre temporelle courte, centrée sur T1 2026.</li>
+          <li>Poids important des rapports de cabinets dans certains indicateurs.</li>
+          <li>Données hétérogènes selon les zones géographiques et secteurs.</li>
+          <li>Évolution rapide des modèles et pratiques, rendant certaines observations volatiles.</li>
+        </ul>
+      </article>
+      <article class="lp-box">
+        <h3>Perspectives 2026-2028</h3>
+        <ul class="lp-list">
+          <li>Renforcement des dispositifs de gouvernance pour les agents autonomes.</li>
+          <li>Montée en puissance des architectures hybrides pour arbitrer coût, performance et conformité.</li>
+          <li>Application complète de l'AI Act au 2 août 2026 et impacts opérationnels associés.</li>
+          <li>Accélération attendue des initiatives souveraines européennes (modèles, cloud, compétences).</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- AXE 3 -->
 <section id="axe3" class="sec">
   <div class="si">
@@ -338,16 +482,16 @@
     <p>La protection des données dans les systèmes d'IA générative nécessite une double réponse : technique et humaine. L'article de Billiris, Gill &amp; Bandara (ACIS 2025) apporte la première analyse systématique, tandis que l'incident Samsung (2023) en illustre la dimension humaine.</p>
     <div class="sbox">
       <h3>Cas d'étude : Affaire Samsung / ChatGPT, avril 2023</h3>
-      <p style="font-size:.85rem;color:var(--gm);margin-bottom:1rem;">Samsung avait levé l'interdiction d'utiliser ChatGPT trois semaines avant les incidents. En vingt jours, trois fuites de données confidentielles ont été documentées, puis une limite de 1024 octets par requête a été imposée en interne.</p>
+      <p class="context-note">Samsung avait levé l'interdiction d'utiliser ChatGPT trois semaines avant les incidents. En vingt jours, trois fuites de données confidentielles ont été documentées, puis une limite de 1024 octets par requête a été imposée en interne.</p>
       <ul class="tl">
         <li><strong>Incident 1 :</strong> Code source bogué d'une base de données de semi-conducteurs copié dans ChatGPT pour obtenir un correctif.</li>
         <li><strong>Incident 2 :</strong> Modèles de test confidentiels pour identifier les puces défectueuses soumis en demandant une optimisation du code.</li>
         <li><strong>Incident 3 :</strong> Enregistrement d'une réunion confidentielle résumé par une IA en préparation d'une présentation.</li>
       </ul>
-      <p style="font-size:.79rem;color:var(--bx);margin-top:1rem;font-style:italic;">Note interne Samsung : «&nbsp;Dès que le contenu est saisi dans ChatGPT, les données sont transmises et stockées dans un serveur, ce qui empêche l'entreprise de les récupérer.&nbsp;»</p>
+      <p class="quote-note">Note interne Samsung : «&nbsp;Dès que le contenu est saisi dans ChatGPT, les données sont transmises et stockées dans un serveur, ce qui empêche l'entreprise de les récupérer.&nbsp;»</p>
     </div>
     <h3 class="h3i">Taxonomie des risques IA : Billiris et al. (ACIS 2025)</h3>
-    <p style="font-size:.84rem;color:var(--gm);margin-bottom:1.5rem;">19 risques identifiés à partir de 45 études (2020-2025), répartis en 4 catégories équilibrées.</p>
+    <p class="mini-note">19 risques identifiés à partir de 45 études (2020-2025), répartis en 4 catégories équilibrées.</p>
     <div class="txg">
       <div class="txc"><div class="txp">26,67%</div><div class="txcat">Risques Model-Level</div><div class="txd">Mémorisation des données, attaques par inférence, manipulation des sorties.</div><div class="txtop">Top : <strong>mémorisation (8,82%)</strong>; les LLMs &gt;100M param. mémorisent jusqu'à 76% des identifiants</div></div>
       <div class="txc"><div class="txp">25,87%</div><div class="txcat">Insider Threat</div><div class="txd">Erreur humaine, mauvaise gestion des privilèges, négligence opérationnelle.</div><div class="txtop">Top : <strong>erreur humaine (9,45%)</strong>; 1er facteur de risque toutes catégories</div></div>
@@ -376,17 +520,17 @@
     <div class="convg">
       <div class="convc">
         <h3>Convergences</h3>
-        <div class="convi"><div class="convl">Adoption réelle mais encore fragmentée</div><p style="font-size:.82rem;margin:.2rem 0 0;color:var(--gf);">Les POCs se multiplient mais les succès industrialisés restent rares. Moins d'un quart des entreprises ont atteint une maturité opérationnelle.</p><div class="convs">Deloitte 2025 · WEF 2025</div></div>
-        <div class="convi"><div class="convl">Protection des données = obstacle n°1</div><p style="font-size:.82rem;margin:.2rem 0 0;color:var(--gf);">62&nbsp;% des dirigeants citent les défis liés aux données comme frein principal. Corroboré par les analyses scientifiques.</p><div class="convs">Deloitte · WEF · Billiris · Ng 2025</div></div>
-        <div class="convi"><div class="convl">La réglementation EU est incontournable</div><p style="font-size:.82rem;margin:.2rem 0 0;color:var(--gf);">RGPD et AI Act définissent un cadre contraignant. La conformité n'est plus optionnelle.</p><div class="convs">CNIL 2025 · AI Act 2024 · Accenture</div></div>
-        <div class="convi"><div class="convl">Souveraineté = priorité de direction</div><p style="font-size:.82rem;margin:.2rem 0 0;color:var(--gf);">Les questions de souveraineté sont passées des équipes IT aux comités de direction.</p><div class="convs">Accenture · European Economics · WEF</div></div>
+        <div class="convi"><div class="convl">Adoption réelle mais encore fragmentée</div><p>Les POCs se multiplient mais les succès industrialisés restent rares. Moins d'un quart des entreprises ont atteint une maturité opérationnelle.</p><div class="convs">Deloitte 2025 · WEF 2025</div></div>
+        <div class="convi"><div class="convl">Protection des données = obstacle n°1</div><p>62&nbsp;% des dirigeants citent les défis liés aux données comme frein principal. Corroboré par les analyses scientifiques.</p><div class="convs">Deloitte · WEF · Billiris · Ng 2025</div></div>
+        <div class="convi"><div class="convl">La réglementation EU est incontournable</div><p>RGPD et AI Act définissent un cadre contraignant. La conformité n'est plus optionnelle.</p><div class="convs">CNIL 2025 · AI Act 2024 · Accenture</div></div>
+        <div class="convi"><div class="convl">Souveraineté = priorité de direction</div><p>Les questions de souveraineté sont passées des équipes IT aux comités de direction.</p><div class="convs">Accenture · European Economics · WEF</div></div>
       </div>
       <div class="convc">
         <h3>Divergences</h3>
-        <div class="convi"><div class="convl">Cloud vs on-premise : tension non résolue</div><p style="font-size:.82rem;margin:.2rem 0 0;color:var(--gf);">Lenovo démontre la rentabilité de l'on-premise à long terme, mais 65&nbsp;% des entreprises restent dépendantes du cloud en pratique.</p><div class="convs">Lenovo 2025 vs Accenture 2025</div></div>
-        <div class="convi"><div class="convl">Risque technique ou risque humain ?</div><p style="font-size:.82rem;margin:.2rem 0 0;color:var(--gf);">Billiris insiste sur les vulnérabilités architecturales. Ng met l'accent sur le facteur humain. Samsung illustre les deux dimensions.</p><div class="convs">Billiris vs Ng 2025 · Samsung 2023</div></div>
-        <div class="convi"><div class="convl">IA souveraine : fatalité ou opportunité ?</div><p style="font-size:.82rem;margin:.2rem 0 0;color:var(--gf);">European Economics souligne la domination US comme obstacle durable. Accenture y voit un paradoxe surmontable.</p><div class="convs">European Economics vs Accenture 2025</div></div>
-        <div class="convi"><div class="convl">Réglementation : confiance ou frein ?</div><p style="font-size:.82rem;margin:.2rem 0 0;color:var(--gf);">La CNIL présente le RGPD comme facteur de confiance. Deloitte et WEF le rapportent comme contrainte perçue par les entreprises.</p><div class="convs">CNIL vs Deloitte · WEF 2025</div></div>
+        <div class="convi"><div class="convl">Cloud vs on-premise : tension non résolue</div><p>Lenovo démontre la rentabilité de l'on-premise à long terme, mais 65&nbsp;% des entreprises restent dépendantes du cloud en pratique.</p><div class="convs">Lenovo 2025 vs Accenture 2025</div></div>
+        <div class="convi"><div class="convl">Risque technique ou risque humain ?</div><p>Billiris insiste sur les vulnérabilités architecturales. Ng met l'accent sur le facteur humain. Samsung illustre les deux dimensions.</p><div class="convs">Billiris vs Ng 2025 · Samsung 2023</div></div>
+        <div class="convi"><div class="convl">IA souveraine : fatalité ou opportunité ?</div><p>European Economics souligne la domination US comme obstacle durable. Accenture y voit un paradoxe surmontable.</p><div class="convs">European Economics vs Accenture 2025</div></div>
+        <div class="convi"><div class="convl">Réglementation : confiance ou frein ?</div><p>La CNIL présente le RGPD comme facteur de confiance. Deloitte et WEF le rapportent comme contrainte perçue par les entreprises.</p><div class="convs">CNIL vs Deloitte · WEF 2025</div></div>
       </div>
     </div>
     <div class="enc" style="margin-top:2.5rem;"><p class="enc-t">Réponse à la problématique</p><p>Le déploiement souverain et sécurisé repose sur trois leviers : un <strong>choix architectural adapté</strong> (on-premise pour les données sensibles, cloud pour les usages non critiques), une <strong>conformité réglementaire proactive</strong> (anticiper l'AI Act avant août 2026), et une <strong>gouvernance interne renforcée</strong> (formation, chartes d'utilisation, DPO impliqué).</p></div>
